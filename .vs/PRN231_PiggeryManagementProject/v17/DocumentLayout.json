@@ -1,0 +1,288 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\piggerymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\piggerymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\piggerymanagementcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\piggerymanagementcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\cage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\cage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:57:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:59:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:75:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:77:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T16:28:28.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Report.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Report.cs",
+              "RelativeDocumentMoniker": "BOs\\Report.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Report.cs",
+              "RelativeToolTip": "BOs\\Report.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA+wBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:24:06.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Role.cs",
+              "RelativeDocumentMoniker": "BOs\\Role.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Role.cs",
+              "RelativeToolTip": "BOs\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:23:03.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\User.cs",
+              "RelativeDocumentMoniker": "BOs\\User.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\User.cs",
+              "RelativeToolTip": "BOs\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:24:18.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Work.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Work.cs",
+              "RelativeDocumentMoniker": "BOs\\Work.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Work.cs",
+              "RelativeToolTip": "BOs\\Work.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA+wB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:22:56.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PiggeryManagementContext.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContext.cs",
+              "RelativeDocumentMoniker": "BOs\\PiggeryManagementContext.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContext.cs",
+              "RelativeToolTip": "BOs\\PiggeryManagementContext.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAlwD4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:08:09.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PiggeryManagementContextFactory.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContextFactory.cs",
+              "RelativeDocumentMoniker": "BOs\\PiggeryManagementContextFactory.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContextFactory.cs",
+              "RelativeToolTip": "BOs\\PiggeryManagementContextFactory.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:08:16.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "History.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\History.cs",
+              "RelativeDocumentMoniker": "BOs\\History.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\History.cs",
+              "RelativeToolTip": "BOs\\History.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:24:00.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cage.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Cage.cs",
+              "RelativeDocumentMoniker": "BOs\\Cage.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Cage.cs",
+              "RelativeToolTip": "BOs\\Cage.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:23:57.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "BOs\\BaseEntity.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\BaseEntity.cs",
+              "RelativeToolTip": "BOs\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:23:56.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Area.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Area.cs",
+              "RelativeDocumentMoniker": "BOs\\Area.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Area.cs",
+              "RelativeToolTip": "BOs\\Area.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBAAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:23:52.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Animal.cs",
+              "RelativeDocumentMoniker": "BOs\\Animal.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Animal.cs",
+              "RelativeToolTip": "BOs\\Animal.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T15:23:06.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:84:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:82:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:73:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:81:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:79:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:85:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
