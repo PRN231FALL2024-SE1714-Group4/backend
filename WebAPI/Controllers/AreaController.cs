@@ -55,7 +55,7 @@ namespace WebAPI.Controllers
             _unitOfWork.AreaRepository.Insert(area);
             _unitOfWork.Save();
 
-            return CreatedAtAction(nameof(GetArea), new { id = area.AreaID }, area);
+            return Ok(CreatedAtAction(nameof(GetArea), new { id = area.AreaID }, area));
         }
 
         // PUT: api/area/{id}
@@ -83,7 +83,7 @@ namespace WebAPI.Controllers
             _unitOfWork.AreaRepository.Update(id, areaToUpdate);
             _unitOfWork.Save();
 
-            return NoContent();
+            return Ok();
         }
 
         // DELETE: api/area/{id}
@@ -98,7 +98,7 @@ namespace WebAPI.Controllers
             }
 
             _unitOfWork.Save();
-            return NoContent();
+            return Ok();
         }
     }
 }
