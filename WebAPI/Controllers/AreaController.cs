@@ -20,22 +20,28 @@ namespace WebAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Area>>> GetAreas()
         {
+            // Include related entities such as "Cages" or others
             var areas = _unitOfWork.AreaRepository.Get();
             return Ok(areas);
         }
+
 
         // GET: api/area/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<Area>> GetArea(Guid id)
         {
-            var area = _unitOfWork.AreaRepository.GetByID(id);
-
-            if (area == null)
+            try
             {
-                return NotFound();
+                var product = _unitOfWork.AreaRepository
+                    .Get(   filter: p => p.AreaID == id,
+                            includeProperties: "Cages,Works")
+                    .FirstOrDefault();
+                return product != null ? Ok(product) : NotFound("Product ID does not exist.");
             }
-
-            return Ok(area);
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         // POST: api/area
@@ -51,22 +57,17 @@ namespace WebAPI.Controllers
             {
                 Name = request.Name
             };
-
+                
             _unitOfWork.AreaRepository.Insert(area);
             _unitOfWork.Save();
 
-            return CreatedAtAction(nameof(GetArea), new { id = area.AreaID }, area);
+            return Ok(CreatedAtAction(nameof(GetArea), new { id = area.AreaID }, area));
         }
 
         // PUT: api/area/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateArea(Guid id, [FromBody] AreaUpdateController request)
         {
-            if (id != request.AreaID)
-            {
-                return BadRequest("ID mismatch.");
-            }
-
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -83,7 +84,7 @@ namespace WebAPI.Controllers
             _unitOfWork.AreaRepository.Update(id, areaToUpdate);
             _unitOfWork.Save();
 
-            return NoContent();
+            return Ok();
         }
 
         // DELETE: api/area/{id}
@@ -98,7 +99,7 @@ namespace WebAPI.Controllers
             }
 
             _unitOfWork.Save();
-            return NoContent();
+            return Ok();
         }
     }
 }

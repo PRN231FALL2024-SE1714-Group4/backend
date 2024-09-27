@@ -20,7 +20,20 @@ builder.Services.AddDbContext<PiggeryManagementContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:5100", "http://localhost:3000") // Add your allowed front-end URLs
+                   .AllowAnyHeader()    // Allow any headers (like Content-Type, Authorization, etc.)
+                   .AllowAnyMethod()    // Allow any HTTP methods (GET, POST, PUT, DELETE, etc.)
+                   .AllowCredentials(); // Allow credentials (if you're using cookies or authentication)
+        });
+});
+
 var app = builder.Build();
+app.UseCors("AllowSpecificOrigins");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

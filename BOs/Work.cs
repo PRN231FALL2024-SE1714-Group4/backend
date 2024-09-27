@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BOs
@@ -24,6 +25,7 @@ namespace BOs
         public virtual User Assigner { get; set; }
         public virtual User Assignee { get; set; }
         public virtual Area Area { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Report> Reports { get; set; } = new List<Report>();
     }
 }

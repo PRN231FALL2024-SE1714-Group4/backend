@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BOs
@@ -23,7 +24,9 @@ namespace BOs
         public string Status { get; set; }
 
         public virtual Role Role { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Work> AssignedWorks { get; set; } = new List<Work>();
+        [JsonIgnore]
         public virtual ICollection<Work> AssignedByMe { get; set; } = new List<Work>();
     }
 }
