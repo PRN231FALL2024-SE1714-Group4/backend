@@ -1,7 +1,8 @@
 ﻿using BOs;
+using BOs.DTOS;
 using DAOs;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Request;
+using Repos;
 
 namespace WebAPI.Controllers
 {
@@ -9,42 +10,32 @@ namespace WebAPI.Controllers
     [ApiController]
     public class AreaController : Controller
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IAreaService _areaService;
 
-        public AreaController(IUnitOfWork unitOfWork)
+        public AreaController(IAreaService areaService)
         {
-            _unitOfWork = unitOfWork;
+            _areaService = areaService;
         }
-
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Area>>> GetAreas()
         {
-            // Include related entities such as "Cages" or others
-            var areas = _unitOfWork.AreaRepository.Get();
+            var areas = _areaService.GetAreas();
             return Ok(areas);
         }
 
-
-        // GET: api/area/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<Area>> GetArea(Guid id)
         {
-            try
+            var area = _areaService.GetArea(id);
+            if (area == null)
             {
-                var product = _unitOfWork.AreaRepository
-                    .Get(   filter: p => p.AreaID == id,
-                            includeProperties: "Cages,Works")
-                    .FirstOrDefault();
-                return product != null ? Ok(product) : NotFound("Product ID does not exist.");
+                return NotFound("Area not found.");
             }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message);
-            }
+
+            return Ok(area);
         }
 
-        // POST: api/area
         [HttpPost]
         public async Task<ActionResult> CreateArea([FromBody] AreaCreateRequest request)
         {
@@ -53,52 +44,36 @@ namespace WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            var area = new Area
-            {
-                Name = request.Name
-            };
-                
-            _unitOfWork.AreaRepository.Insert(area);
-            _unitOfWork.Save();
-
-            return Ok(CreatedAtAction(nameof(GetArea), new { id = area.AreaID }, area));
+            var area = _areaService.CreateArea(request);
+            return CreatedAtAction(nameof(GetArea), new { id = area.AreaID }, area);
         }
 
-        // PUT: api/area/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateArea(Guid id, [FromBody] AreaUpdateController request)
+        public async Task<IActionResult> UpdateArea(Guid id, [FromBody] AreaUpdateRequest request)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var areaToUpdate = _unitOfWork.AreaRepository.GetByID(id);
-            if (areaToUpdate == null)
+            var updatedArea = _areaService.UpdateArea(id, request);
+            if (updatedArea == null)
             {
                 return NotFound();
             }
 
-            areaToUpdate.Name = request.Name;
-
-            _unitOfWork.AreaRepository.Update(id, areaToUpdate);
-            _unitOfWork.Save();
-
-            return Ok();
+            return Ok(updatedArea);
         }
 
-        // DELETE: api/area/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteArea(Guid id)
         {
-            var isDeleted = _unitOfWork.AreaRepository.Delete(id);
-
+            var isDeleted = _areaService.DeleteArea(id);
             if (!isDeleted)
             {
                 return NotFound();
             }
 
-            _unitOfWork.Save();
             return Ok();
         }
     }

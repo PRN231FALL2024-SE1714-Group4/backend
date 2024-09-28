@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebAPI.Request
+namespace BOs.DTOS
 {
-    public class AreaUpdateController
+    public class AreaUpdateRequest
     {
         //[Required]
         //public Guid AreaID { get; set; }

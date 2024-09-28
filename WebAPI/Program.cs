@@ -2,6 +2,8 @@
 using BOs;
 using DAOs;
 using Microsoft.EntityFrameworkCore;
+using Repos.Implements;
+using Repos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 //builder.Services.AddRazorPages();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<ICageService, CageService>();
+builder.Services.AddScoped<IAreaService, AreaService>();
 
 
 //Add DbContext configuration

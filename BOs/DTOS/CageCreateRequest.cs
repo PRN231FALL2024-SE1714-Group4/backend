@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebAPI.Request
+namespace BOs.DTOS
 {
     public class CageCreateRequest
     {

@@ -1,6 +1,8 @@
 ﻿using BOs;
+using BOs.DTOS;
 using DAOs;
 using Microsoft.AspNetCore.Mvc;
+using Repos;
 using WebAPI.Request;
 
 namespace WebAPI.Controllers
@@ -9,18 +11,18 @@ namespace WebAPI.Controllers
     [ApiController]
     public class CageController : Controller
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly ICageService _cageService;
 
-        public CageController(IUnitOfWork unitOfWork)
+        public CageController(ICageService cageService)
         {
-            _unitOfWork = unitOfWork;
+            _cageService = cageService;
         }
 
         // GET: api/cage
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cage>>> GetCages()
         {
-            var cages = _unitOfWork.CageRepository.Get();
+            var cages = await _cageService.GetCages();
             return Ok(cages);
         }
 
@@ -28,38 +30,16 @@ namespace WebAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Cage>> GetCage(Guid id)
         {
-            try
-            {
-                var cage = _unitOfWork.CageRepository
-                    .Get(   filter: c => c.CageID == id, 
-                            includeProperties: "Area,Histories")
-                    .FirstOrDefault();
-                return cage != null ? Ok(cage) : NotFound("Cage ID does not exist.");
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message);
-            }
+            var cage = await _cageService.GetCageById(id);
+            return cage != null ? Ok(cage) : NotFound("Cage ID does not exist.");
         }
 
         [HttpGet("area/{id}")]
-        public async Task<ActionResult<List<Cage>>> GetCageOfArea(Guid id)
+        public async Task<ActionResult<List<Cage>>> GetCagesOfArea(Guid id)
         {
-            try
-            {
-                var cages = _unitOfWork.CageRepository
-                    .Get(filter: p => p.AreaID == id, 
-                    includeProperties: "Area")
-                    .ToList();
-
-                return cages.Any() ? Ok(cages) : NotFound("No cages found for the specified Area ID.");
-            }
-            catch (Exception e)
-            {
-                throw new Exception($"An error occurred: {e.Message}");
-            }
+            var cages = await _cageService.GetCagesByAreaId(id);
+            return cages.Any() ? Ok(cages) : NotFound("No cages found for the specified Area ID.");
         }
-
 
         // POST: api/cage
         [HttpPost]
@@ -70,15 +50,7 @@ namespace WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            var cage = new Cage
-            {
-                CageName = request.CageName,
-                AreaID = request.AreaID
-            };
-
-            _unitOfWork.CageRepository.Insert(cage);
-            _unitOfWork.Save();
-
+            var cage = await _cageService.CreateCage(request);
             return Ok(CreatedAtAction(nameof(GetCage), new { id = cage.CageID }, cage));
         }
 
@@ -91,33 +63,17 @@ namespace WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            var cageToUpdate = _unitOfWork.CageRepository.GetByID(id);
-            if (cageToUpdate == null)
-            {
-                return NotFound();
-            }
-
-            cageToUpdate.AreaID = request.AreaID;
-
-            _unitOfWork.CageRepository.Update(id, cageToUpdate);
-            _unitOfWork.Save();
-
-            return Ok();
+            var updated = await _cageService.UpdateCage(id, request);
+            return updated ? Ok() : NotFound("Cage not found.");
         }
 
         // DELETE: api/cage/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCage(Guid id)
         {
-            var isDeleted = _unitOfWork.CageRepository.Delete(id);
-
-            if (!isDeleted)
-            {
-                return NotFound();
-            }
-
-            _unitOfWork.Save();
-            return Ok();
+            var isDeleted = await _cageService.DeleteCage(id);
+            return isDeleted ? Ok() : NotFound();
         }
+
     }
 }
