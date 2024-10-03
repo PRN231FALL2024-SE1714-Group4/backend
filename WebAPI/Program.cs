@@ -4,6 +4,9 @@ using DAOs;
 using Microsoft.EntityFrameworkCore;
 using Repos.Implements;
 using Repos;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +17,8 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICageService, CageService>();
 builder.Services.AddScoped<IAreaService, AreaService>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
 
 
 //Add DbContext configuration
@@ -35,6 +40,34 @@ builder.Services.AddCors(options =>
                    .AllowCredentials(); // Allow credentials (if you're using cookies or authentication)
         });
 });
+
+// Load JWT settings from appsettings.json
+var jwtSettings = builder.Configuration.GetSection("Jwt");
+var secretKey = Encoding.ASCII.GetBytes(jwtSettings["SecretKey"]);
+
+// Configure JWT Bearer authentication
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+});
+//.AddJwtBearer(options =>
+//{
+//    options.RequireHttpsMetadata = false;
+//    options.SaveToken = true;
+//    options.TokenValidationParameters = new TokenValidationParameters
+//    {
+//        ValidateIssuer = true,
+//        ValidateAudience = true,
+//        ValidateLifetime = true,
+//        ValidateIssuerSigningKey = true,
+//        ValidIssuer = jwtSettings["Issuer"],
+//        ValidAudience = jwtSettings["Audience"],
+//        IssuerSigningKey = new SymmetricSecurityKey(secretKey)
+//    };
+//});
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 app.UseCors("AllowSpecificOrigins");
