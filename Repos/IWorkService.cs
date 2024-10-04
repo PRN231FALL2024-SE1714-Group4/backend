@@ -10,8 +10,9 @@ namespace Repos
 {
     public interface IWorkService
     {
-        void CreateWork(CreateWorkRequest request);
+        Work CreateWork(CreateWorkRequest request);
         IEnumerable<Work> ViewMyWork();
         IEnumerable<Work> ViewAssignedTasks();
+        Work GetWorkByID(Guid id);
     }
 }

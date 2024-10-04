@@ -17,6 +17,7 @@ namespace BOs
         public Guid AreaID { get; set; }
         public Guid AssignerID { get; set; }
         public Guid AssigneeID { get; set; }
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public WorkStatus Status { get; set; }
         public string Shift { get; set; }
         public string Description { get; set; }

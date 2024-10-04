@@ -24,17 +24,20 @@ namespace Repos.Implements
         }
 
         // 1. Function to create Work
-        public void CreateWork(CreateWorkRequest request)
+        public Work CreateWork(CreateWorkRequest request)
         {
-            var currentUserId = GetCurrentUserId();
+            var assigner = _unitOfWork.UserRepository.GetByID(request.AssigerID);
+            var currentUserId = assigner != null? assigner.UserID : throw new Exception("There are no assigner");
+            var assignee = _unitOfWork.UserRepository.GetByID(request.AssigneeID);
+            var assigneeID = assignee != null ? assignee.UserID : throw new Exception("There are no assignee");
 
             // Create new Work
             var work = new Work
             {
-                RoleID = request.RoleID,
+                RoleID = assigner.RoleID,
                 AreaID = request.AreaID,
                 AssignerID = currentUserId, // Set the current user as the assigner
-                AssigneeID = request.AssigneeID,
+                AssigneeID = assigneeID,
                 Status = WorkStatus.OPEN,
                 Shift = request.Shift,
                 Description = request.Description,
@@ -44,6 +47,8 @@ namespace Repos.Implements
 
             _unitOfWork.WorkRepository.Insert(work);
             _unitOfWork.Save();
+
+            return _unitOfWork.WorkRepository.GetByID(work.WorkId);
         }
 
         // 2. Function for Assignee to view their Tasks
@@ -73,6 +78,13 @@ namespace Repos.Implements
                 }
             }
             throw new UnauthorizedAccessException("User is not authenticated.");
+        }
+
+        public Work GetWorkByID(Guid id)
+        {
+            return _unitOfWork.WorkRepository
+                .Get(filter: w => w.WorkId == id, includeProperties: "Area,Assigner,Assignee")
+                .FirstOrDefault();
         }
     }
 }

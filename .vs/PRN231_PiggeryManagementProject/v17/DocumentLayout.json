@@ -3,52 +3,100 @@
   "WorkspaceRootPath": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\piggerymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\piggerymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\webapi\\controllers\\workcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\workcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\piggerymanagementcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\piggerymanagementcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\repos\\implements\\workservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\workservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\repos\\implements\\cageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\cageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\dtos\\createworkrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\dtos\\createworkrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\enum\\workstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\enum\\workstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\webapi\\controllers\\areacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\areacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\repos\\implements\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\repos\\iworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\iworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\repos\\implements\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\cage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\cage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\repos\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\webapi\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\prn231_piggerymanagementproject\\bos\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\repos\\implements\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\repos\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\dtos\\createreportrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\dtos\\createreportrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\piggerymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\piggerymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\enum\\reportstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\enum\\reportstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\piggerymanagementcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\piggerymanagementcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\bos\\dtos\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\dtos\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,188 +145,308 @@
               "Name": "ST:77:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Program.cs",
-              "RelativeToolTip": "WebAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:28:28.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Report.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Report.cs",
-              "RelativeDocumentMoniker": "BOs\\Report.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Report.cs",
-              "RelativeToolTip": "BOs\\Report.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA+wBsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:24:06.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Role.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Role.cs",
-              "RelativeDocumentMoniker": "BOs\\Role.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Role.cs",
-              "RelativeToolTip": "BOs\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:23:03.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\User.cs",
-              "RelativeDocumentMoniker": "BOs\\User.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\User.cs",
-              "RelativeToolTip": "BOs\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:24:18.657Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Work.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Work.cs",
-              "RelativeDocumentMoniker": "BOs\\Work.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Work.cs",
-              "RelativeToolTip": "BOs\\Work.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA+wB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:22:56.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PiggeryManagementContext.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContext.cs",
-              "RelativeDocumentMoniker": "BOs\\PiggeryManagementContext.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContext.cs",
-              "RelativeToolTip": "BOs\\PiggeryManagementContext.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAlwD4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:08:09.697Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PiggeryManagementContextFactory.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContextFactory.cs",
-              "RelativeDocumentMoniker": "BOs\\PiggeryManagementContextFactory.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContextFactory.cs",
-              "RelativeToolTip": "BOs\\PiggeryManagementContextFactory.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "WorkService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\WorkService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\WorkService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\WorkService.cs",
+              "RelativeToolTip": "Repos\\Implements\\WorkService.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAQwFUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:08:16.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "History.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\History.cs",
-              "RelativeDocumentMoniker": "BOs\\History.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\History.cs",
-              "RelativeToolTip": "BOs\\History.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAUAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:24:00.86Z",
+              "WhenOpened": "2024-10-03T16:48:50.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Cage.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Cage.cs",
-              "RelativeDocumentMoniker": "BOs\\Cage.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Cage.cs",
-              "RelativeToolTip": "BOs\\Cage.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAATAAAA",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\UserService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\UserService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\UserService.cs",
+              "RelativeToolTip": "Repos\\Implements\\UserService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAA1wGcAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:23:57.153Z",
+              "WhenOpened": "2024-10-01T16:09:04.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "BOs\\BaseEntity.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\BaseEntity.cs",
-              "RelativeToolTip": "BOs\\BaseEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "DocumentIndex": 5,
+              "Title": "CreateWorkRequest.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\DTOS\\CreateWorkRequest.cs",
+              "RelativeDocumentMoniker": "BOs\\DTOS\\CreateWorkRequest.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\DTOS\\CreateWorkRequest.cs",
+              "RelativeToolTip": "BOs\\DTOS\\CreateWorkRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:23:56.161Z",
+              "WhenOpened": "2024-10-03T16:38:29.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Work.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Work.cs",
+              "RelativeDocumentMoniker": "BOs\\Work.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Work.cs",
+              "RelativeToolTip": "BOs\\Work.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAwwBsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:45:08.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorkController.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Controllers\\WorkController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\WorkController.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Controllers\\WorkController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\WorkController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAYwCgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T17:48:05.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Area.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Area.cs",
-              "RelativeDocumentMoniker": "BOs\\Area.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Area.cs",
-              "RelativeToolTip": "BOs\\Area.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBAAAABMAAAA",
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\User.cs",
+              "RelativeDocumentMoniker": "BOs\\User.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\User.cs",
+              "RelativeToolTip": "BOs\\User.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:23:52.322Z",
+              "WhenOpened": "2024-10-04T14:19:06.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WorkStatus.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Enum\\WorkStatus.cs",
+              "RelativeDocumentMoniker": "BOs\\Enum\\WorkStatus.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Enum\\WorkStatus.cs",
+              "RelativeToolTip": "BOs\\Enum\\WorkStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T16:50:54.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAYwHoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T17:55:44.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\ReportController.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\ReportController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T17:50:44.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CageService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\CageService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\CageService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\CageService.cs",
+              "RelativeToolTip": "Repos\\Implements\\CageService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwB0AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T14:36:14.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AreaController.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Controllers\\AreaController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AreaController.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Controllers\\AreaController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\AreaController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T14:08:54.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IWorkService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\IWorkService.cs",
+              "RelativeDocumentMoniker": "Repos\\IWorkService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\IWorkService.cs",
+              "RelativeToolTip": "Repos\\IWorkService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T16:48:32.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Animal.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Animal.cs",
-              "RelativeDocumentMoniker": "BOs\\Animal.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Animal.cs",
-              "RelativeToolTip": "BOs\\Animal.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAUAAAAbAAAA",
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\RoleService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\RoleService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\RoleService.cs",
+              "RelativeToolTip": "Repos\\Implements\\RoleService.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T15:23:06.493Z",
+              "WhenOpened": "2024-10-04T13:54:14.918Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:84:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\appsettings.json",
+              "RelativeToolTip": "WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-04T13:18:43.526Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:82:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\IUserService.cs",
+              "RelativeDocumentMoniker": "Repos\\IUserService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\IUserService.cs",
+              "RelativeToolTip": "Repos\\IUserService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwA4AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:13:12.027Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:73:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\ReportService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\ReportService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Implements\\ReportService.cs",
+              "RelativeToolTip": "Repos\\Implements\\ReportService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T17:40:17.155Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:81:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IReportService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\IReportService.cs",
+              "RelativeDocumentMoniker": "Repos\\IReportService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\IReportService.cs",
+              "RelativeToolTip": "Repos\\IReportService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T17:40:04.237Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:79:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PiggeryManagementContext.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContext.cs",
+              "RelativeDocumentMoniker": "BOs\\PiggeryManagementContext.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContext.cs",
+              "RelativeToolTip": "BOs\\PiggeryManagementContext.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T16:51:08.822Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:85:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreateReportRequest.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\DTOS\\CreateReportRequest.cs",
+              "RelativeDocumentMoniker": "BOs\\DTOS\\CreateReportRequest.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\DTOS\\CreateReportRequest.cs",
+              "RelativeToolTip": "BOs\\DTOS\\CreateReportRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T16:42:05.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReportStatus.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Enum\\ReportStatus.cs",
+              "RelativeDocumentMoniker": "BOs\\Enum\\ReportStatus.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Enum\\ReportStatus.cs",
+              "RelativeToolTip": "BOs\\Enum\\ReportStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T16:50:25.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Report.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Report.cs",
+              "RelativeDocumentMoniker": "BOs\\Report.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\Report.cs",
+              "RelativeToolTip": "BOs\\Report.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:47:22.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PiggeryManagementContextFactory.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContextFactory.cs",
+              "RelativeDocumentMoniker": "BOs\\PiggeryManagementContextFactory.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\PiggeryManagementContextFactory.cs",
+              "RelativeToolTip": "BOs\\PiggeryManagementContextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:47:21.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserLoginRequest.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\DTOS\\UserLoginRequest.cs",
+              "RelativeDocumentMoniker": "BOs\\DTOS\\UserLoginRequest.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\DTOS\\UserLoginRequest.cs",
+              "RelativeToolTip": "BOs\\DTOS\\UserLoginRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:13:38.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\WebAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAlwDMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:04:18.54Z"
             }
           ]
         }

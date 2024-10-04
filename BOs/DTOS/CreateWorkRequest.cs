@@ -8,7 +8,7 @@ namespace BOs.DTOS
 {
     public class CreateWorkRequest
     {
-        public Guid RoleID { get; set; } // Role ID for the assignee
+        public Guid AssigerID { get; set; } // Role ID for the assignee
         public Guid AreaID { get; set; } // Area where the work is assigned
         public string Description { get; set; } // Task description
         public DateTime StartDate { get; set; } // Start date of the task
