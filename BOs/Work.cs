@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BOs.Enum;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace BOs
         public Guid AreaID { get; set; }
         public Guid AssignerID { get; set; }
         public Guid AssigneeID { get; set; }
-        public string Status { get; set; }
+        public WorkStatus Status { get; set; }
         public string Shift { get; set; }
         public string Description { get; set; }
         public DateTime StartDate { get; set; }

@@ -78,6 +78,7 @@ namespace Repos.Implements
 
         private string GenerateJwtToken(User user)
         {
+            var role = _unitOfWork.RoleRepository.GetByID(user.RoleID);
             var jwtSettings = _configuration.GetSection("Jwt");
             var key = Encoding.ASCII.GetBytes(jwtSettings["SecretKey"]);
 
@@ -87,7 +88,8 @@ namespace Repos.Implements
                 new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.Name, user.FullName),
-                new Claim(ClaimTypes.Role, "User")  // Assign user role
+                new Claim(ClaimTypes.NameIdentifier, user.UserID.ToString()),
+                new Claim(ClaimTypes.Role, role.Name)
             };
 
             // Generate the JWT token
