@@ -1,11 +1,16 @@
-﻿using BOs.DTOS;
+﻿using BOs;
+using BOs.DTOS;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repos;
+using Repos.Response;
+using WebAPI.Filter;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    //[Authorize]
     public class WorkController : Controller
     {
         private readonly IWorkService _workservice;
@@ -17,12 +22,26 @@ namespace WebAPI.Controllers
 
         // 1. Create Work (Assign Task)
         [HttpPost("create")]
-        public IActionResult CreateWork([FromBody] CreateWorkRequest request)
+        public ActionResult<WorkResponse> CreateWork([FromBody] CreateWorkRequest request)
         {
             try
             {
-                _workservice.CreateWork(request);
-                return Ok(new { message = "Task created successfully." });
+                var work = _workservice.CreateWork(request);
+                return Ok(work);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<WorkResponse> GetWork(Guid id)
+        {
+            try
+            {
+                var work = _workservice.GetWorkByID(id);
+                return Ok(work);
             }
             catch (Exception ex)
             {
@@ -32,7 +51,8 @@ namespace WebAPI.Controllers
 
         // 2. View My Work (Assignee)
         [HttpGet("my-work")]
-        public IActionResult ViewMyWork()
+        [JwtAuthorize("User")]
+        public ActionResult<List<WorkResponse>> ViewMyWork(Guid id)
         {
             try
             {
@@ -62,7 +82,8 @@ namespace WebAPI.Controllers
 
         // 4. View Assigned Tasks (Assigner)
         [HttpGet("assigned-tasks")]
-        public IActionResult ViewAssignedTasks()
+        [JwtAuthorize("User")]
+        public ActionResult<WorkResponse> ViewAssignedTasks()
         {
             try
             {

@@ -14,6 +14,7 @@ namespace BOs
         [Key]
         public Guid UserID { get; set; } = Guid.NewGuid();
         public Guid RoleID { get; set; }
+        [JsonIgnore]
         public string Password { get; set; }
         public string FullName { get; set; }
         public DateTime DateOfBirth { get; set; }

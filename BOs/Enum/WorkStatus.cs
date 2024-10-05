@@ -8,9 +8,9 @@ namespace BOs.Enum
 {
     public enum WorkStatus
     {
-        OPEN,
-        IN_PROGRESS,
-        DONE,
-        CLOSED
+        OPEN = 0,
+        IN_PROGRESS = 1,
+        DONE = 2,
+        CLOSED = 3
     }
 }

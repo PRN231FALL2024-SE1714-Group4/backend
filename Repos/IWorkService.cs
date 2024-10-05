@@ -1,5 +1,6 @@
 ﻿using BOs;
 using BOs.DTOS;
+using Repos.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,9 @@ namespace Repos
 {
     public interface IWorkService
     {
-        void CreateWork(CreateWorkRequest request);
-        IEnumerable<Work> ViewMyWork();
-        IEnumerable<Work> ViewAssignedTasks();
+        WorkResponse CreateWork(CreateWorkRequest request);
+        IEnumerable<WorkResponse> ViewMyWork();
+        IEnumerable<WorkResponse> ViewAssignedTasks();
+        WorkResponse GetWorkByID(Guid id);
     }
 }
