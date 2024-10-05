@@ -129,7 +129,7 @@ namespace Repos.Implements
 
         public List<Work> GetWorks()
         {
-            return _unitOfWork.WorkRepository.Get().ToList();
+            return _unitOfWork.WorkRepository.Get(includeProperties: "Area,Assigner,Assignee").ToList();
         }
     }
 }

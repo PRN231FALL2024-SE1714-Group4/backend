@@ -98,11 +98,17 @@ namespace WebAPI.Controllers
             }
         }
 
-        [HttpGet]
-        public ActionResult<IEnumerable<Work>> GetAllRoles()
+        [HttpGet("")]
+        public ActionResult<List<Work>> getAllWorks()
         {
-            var works = _workservice.GetWorks;
-            return Ok(works);
+            try
+            {
+                return Ok(_workservice.GetWorks());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
     }
