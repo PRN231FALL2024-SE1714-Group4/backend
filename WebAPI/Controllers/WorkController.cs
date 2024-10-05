@@ -3,6 +3,7 @@ using BOs.DTOS;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repos;
+using Repos.Implements;
 using Repos.Response;
 using WebAPI.Filter;
 
@@ -96,5 +97,13 @@ namespace WebAPI.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Work>> GetAllRoles()
+        {
+            var works = _workservice.GetWorks;
+            return Ok(works);
+        }
+
     }
 }

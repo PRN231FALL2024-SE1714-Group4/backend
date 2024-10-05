@@ -123,6 +123,13 @@ namespace Repos.Implements
                 compltedTask = completedTasks,
                 totalTask = totalTasks
             };
+
+
+        }
+
+        public List<Work> GetWorks()
+        {
+            return _unitOfWork.WorkRepository.Get().ToList();
         }
     }
 }
