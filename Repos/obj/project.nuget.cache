@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ij6XW5lPrV9IgFDuXdsEmN7bqwL7YMAZCHFhQLk7V1Rr5ak4JhOCJr12EjuCfA39TaCR6kadeqwX5tI52ESGjg==",
+  "dgSpecHash": "RESl38GaYqt1BErDAHI+Z8MkJgONxLcPuSlO/dgQlGydvSMmzDxMyo+J3+3ASGUWH9kyC6+VA2h54vdJea85Fw==",
   "success": true,
-  "projectFilePath": "/Users/tranthihongphuc/Downloads/backend/Repos/Repos.csproj",
+  "projectFilePath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/Repos/Repos.csproj",
   "expectedPackageFiles": [
     "/Users/tranthihongphuc/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/tranthihongphuc/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

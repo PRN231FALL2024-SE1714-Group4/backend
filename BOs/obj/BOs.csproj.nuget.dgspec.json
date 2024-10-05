@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj": {}
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj": {}
   },
   "projects": {
-    "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj": {
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj",
+        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj",
+        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj",
         "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
-        "outputPath": "/Users/tranthihongphuc/Downloads/backend/BOs/obj/",
+        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"

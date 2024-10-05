@@ -95,7 +95,7 @@ namespace Repos.Implements
                 new Claim(JwtRegisteredClaimNames.Jti, user.UserID.ToString()),
                 new Claim(ClaimTypes.Name, user.FullName),
                 new Claim(ClaimTypes.NameIdentifier, user.UserID.ToString()),
-                new Claim(ClaimTypes.Role, role.Name)
+                new Claim(ClaimTypes.Role, role.Name.ToUpper())
             };
 
             // Generate the JWT token
@@ -153,7 +153,7 @@ namespace Repos.Implements
 
         public List<User> GetUsers()
         {
-            return _unitOfWork.UserRepository.Get().ToList();
+            return _unitOfWork.UserRepository.Get(includeProperties: "Role").ToList();
         }
 
         public User GetCurrentUser()

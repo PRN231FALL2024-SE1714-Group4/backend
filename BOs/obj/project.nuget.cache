@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4TJKVmz/QiaZSpoODreNxo6PjTDWEimEcQWWhvccsApG3ruAHLCGbk5A5eh3g30eXHdCHuv6z19FmnGwvsILgQ==",
+  "dgSpecHash": "6tJoKxAFOpDWidlaRpgz9klmqpW9BLVEg2uOFEn4VbClkhmb28apnleIN2T/Du78N0QZXcPv9Mvz8wrmp8UQSw==",
   "success": true,
-  "projectFilePath": "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj",
+  "projectFilePath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj",
   "expectedPackageFiles": [
     "/Users/tranthihongphuc/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/tranthihongphuc/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tranthihongphuc/Downloads/backend/Repos/Repos.csproj": {}
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/Repos/Repos.csproj": {}
   },
   "projects": {
-    "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj": {
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj",
+        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj",
+        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj",
         "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
-        "outputPath": "/Users/tranthihongphuc/Downloads/backend/BOs/obj/",
+        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
@@ -96,14 +96,14 @@
         }
       }
     },
-    "/Users/tranthihongphuc/Downloads/backend/DAOs/DAOs.csproj": {
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/DAOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tranthihongphuc/Downloads/backend/DAOs/DAOs.csproj",
+        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/DAOs.csproj",
         "projectName": "DAOs",
-        "projectPath": "/Users/tranthihongphuc/Downloads/backend/DAOs/DAOs.csproj",
+        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/DAOs.csproj",
         "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
-        "outputPath": "/Users/tranthihongphuc/Downloads/backend/DAOs/obj/",
+        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
@@ -119,8 +119,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj": {
-                "projectPath": "/Users/tranthihongphuc/Downloads/backend/BOs/BOs.csproj"
+              "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj": {
+                "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj"
               }
             }
           }
@@ -154,14 +154,14 @@
         }
       }
     },
-    "/Users/tranthihongphuc/Downloads/backend/Repos/Repos.csproj": {
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/Repos/Repos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tranthihongphuc/Downloads/backend/Repos/Repos.csproj",
+        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/Repos/Repos.csproj",
         "projectName": "Repos",
-        "projectPath": "/Users/tranthihongphuc/Downloads/backend/Repos/Repos.csproj",
+        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/Repos/Repos.csproj",
         "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
-        "outputPath": "/Users/tranthihongphuc/Downloads/backend/Repos/obj/",
+        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/Repos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
@@ -177,8 +177,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/tranthihongphuc/Downloads/backend/DAOs/DAOs.csproj": {
-                "projectPath": "/Users/tranthihongphuc/Downloads/backend/DAOs/DAOs.csproj"
+              "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/DAOs.csproj": {
+                "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/DAOs.csproj"
               }
             }
           }

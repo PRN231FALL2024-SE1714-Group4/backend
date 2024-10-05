@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DFjLYyn0gV7KllVGw8DocYzepFS7SZQYRiEC4lCuyJ3QHa3pgwR+vaIyCm0VAtwrpParBAgyJXj6pDXV+dOErA==",
+  "dgSpecHash": "yPsaUS073fgR+FK+j2rr1maC57Mn2ZX+D4h8MMX8fe+L7gBvTR6zIvk+DmuoG0FFZ5EY2jjTennM341sn3IMbg==",
   "success": true,
-  "projectFilePath": "/Users/tranthihongphuc/Downloads/backend/DAOs/DAOs.csproj",
+  "projectFilePath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/DAOs.csproj",
   "expectedPackageFiles": [
     "/Users/tranthihongphuc/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/tranthihongphuc/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

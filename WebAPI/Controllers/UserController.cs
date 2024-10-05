@@ -1,8 +1,10 @@
 ﻿using BOs.DTOS;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Repos.Response;
 using Repos;
 using BOs;
+using WebAPI.Filter;
 namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -71,6 +73,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("me")]
+        [JwtAuthorize("ADMIN", "MANAGER")]
         public ActionResult<User> getCurrentUser()
         {
             try

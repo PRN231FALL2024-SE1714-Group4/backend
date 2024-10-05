@@ -4503,11 +4503,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tranthihongphuc/Downloads/backend/WebAPI/WebAPI.csproj",
+      "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/WebAPI/WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "/Users/tranthihongphuc/Downloads/backend/WebAPI/WebAPI.csproj",
+      "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/WebAPI/WebAPI.csproj",
       "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
-      "outputPath": "/Users/tranthihongphuc/Downloads/backend/WebAPI/obj/",
+      "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/WebAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
@@ -4524,8 +4524,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/tranthihongphuc/Downloads/backend/Repos/Repos.csproj": {
-              "projectPath": "/Users/tranthihongphuc/Downloads/backend/Repos/Repos.csproj"
+            "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/Repos/Repos.csproj": {
+              "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/Repos/Repos.csproj"
             }
           }
         }

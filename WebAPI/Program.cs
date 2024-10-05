@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Register IHttpContextAccessor
 builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+.AddJsonOptions(options =>
+ {
+     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+ });
 //builder.Services.AddRazorPages();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICageService, CageService>();
