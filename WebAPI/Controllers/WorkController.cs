@@ -53,7 +53,7 @@ namespace WebAPI.Controllers
 
         // 2. View My Work (Assignee)
         [HttpGet("my-work")]
-        [JwtAuthorize("User")]
+        [JwtAuthorize("ADMIN", "MANAGER", "STAFF")]
         public ActionResult<List<WorkResponse>> ViewMyWork(Guid id)
         {
             try
@@ -84,7 +84,7 @@ namespace WebAPI.Controllers
 
         // 4. View Assigned Tasks (Assigner)
         [HttpGet("assigned-tasks")]
-        [JwtAuthorize("User")]
+        [JwtAuthorize("ADMIN","MANAGER","STAFF")]
         public ActionResult<WorkResponse> ViewAssignedTasks()
         {
             try
