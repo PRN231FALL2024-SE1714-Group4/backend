@@ -1,0 +1,14 @@
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/bin/Debug/net7.0/BOs.deps.json
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/bin/Debug/net7.0/BOs.runtimeconfig.json
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/bin/Debug/net7.0/BOs.dll
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/bin/Debug/net7.0/BOs.pdb
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/BOs.csproj.AssemblyReference.cache
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/BOs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/BOs.AssemblyInfoInputs.cache
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/BOs.AssemblyInfo.cs
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/BOs.csproj.CoreCompileInputs.cache
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/BOs.dll
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/refint/BOs.dll
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/BOs.pdb
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/BOs.genruntimeconfig.cache
+/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/Debug/net7.0/ref/BOs.dll

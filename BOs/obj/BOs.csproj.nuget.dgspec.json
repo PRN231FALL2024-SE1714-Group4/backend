@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\BOs.csproj": {}
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/BOs.csproj": {}
   },
   "projects": {
-    "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\BOs.csproj": {
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\BOs.csproj",
+        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\BOs.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\BOs\\obj\\",
+        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/BOs.csproj",
+        "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
+        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/BOs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -93,26 +87,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
         }
       }
     }

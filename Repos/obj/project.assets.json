@@ -3848,34 +3848,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACER\\.nuget\\packages\\": {}
+    "/Users/tranthihongphuc/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Repos.csproj",
+      "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/Repos/Repos.csproj",
       "projectName": "Repos",
-      "projectPath": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\Repos.csproj",
-      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\Repos\\obj\\",
+      "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/Repos/Repos.csproj",
+      "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
+      "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/Repos/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\DAOs\\DAOs.csproj": {
-              "projectPath": "E:\\FPT\\8th Sem\\PRN231\\PRN231_PiggeryManagementProject\\DAOs\\DAOs.csproj"
+            "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/DAOs/DAOs.csproj": {
+              "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/DAOs/DAOs.csproj"
             }
           }
         }
@@ -3884,11 +3883,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3905,26 +3899,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
       }
     }
   }
