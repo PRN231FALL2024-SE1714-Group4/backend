@@ -22,6 +22,7 @@ namespace WebAPI.Controllers
 
         // 1. Create Work (Assign Task)
         [HttpPost("create")]
+        [JwtAuthorize("ADMIN", "MANAGER", "STAFF")]
         public ActionResult<WorkResponse> CreateWork([FromBody] CreateWorkRequest request)
         {
             try

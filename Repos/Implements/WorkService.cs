@@ -26,8 +26,8 @@ namespace Repos.Implements
 
         public WorkResponse CreateWork(CreateWorkRequest request)
         {
-            var assigner = _unitOfWork.UserRepository.GetByID(request.AssigerID);
-            var currentUserId = assigner != null ? assigner.UserID : throw new Exception("There are no assigner");
+            var currentUserId = this.GetCurrentUserId();
+            var assigner = _unitOfWork.UserRepository.GetByID(currentUserId);
             var assignee = _unitOfWork.UserRepository.GetByID(request.AssigneeID);
             var assigneeID = assignee != null ? assignee.UserID : throw new Exception("There are no assignee");
 
