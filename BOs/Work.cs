@@ -13,20 +13,29 @@ namespace BOs
     {
         [Key]
         public Guid WorkId { get; set; } = Guid.NewGuid();
-        public Guid RoleID { get; set; }
-        public Guid AreaID { get; set; }
+
+        public Guid CageID { get; set; }
+
         public Guid AssignerID { get; set; }
+
         public Guid AssigneeID { get; set; }
+
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public WorkStatus Status { get; set; }
-        public string Shift { get; set; }
+
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public WorkShift Shift { get; set; }
+
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public WorkMission Mission { get; set; }
+
         public string Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
         public virtual User Assigner { get; set; }
         public virtual User Assignee { get; set; }
-        public virtual Area Area { get; set; }
+        public virtual Cage Cage { get; set; }
         [JsonIgnore]
         public virtual ICollection<Report> Reports { get; set; } = new List<Report>();
     }

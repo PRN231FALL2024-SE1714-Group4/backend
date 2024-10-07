@@ -29,3 +29,19 @@ E:/FPT/8th Sem/PRN231/PRN231_PiggeryManagementProject/DAOs/obj/Debug/net7.0/ref/
 /Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/DAOs/obj/Debug/net7.0/refint/DAOs.dll
 /Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/DAOs/obj/Debug/net7.0/DAOs.pdb
 /Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/backend/DAOs/obj/Debug/net7.0/ref/DAOs.dll
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.csproj.AssemblyReference.cache
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.AssemblyInfoInputs.cache
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.AssemblyInfo.cs
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.csproj.CoreCompileInputs.cache
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.sourcelink.json
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\bin\Debug\net7.0\DAOs.deps.json
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\bin\Debug\net7.0\DAOs.dll
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\bin\Debug\net7.0\DAOs.pdb
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\bin\Debug\net7.0\BOs.dll
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\bin\Debug\net7.0\BOs.pdb
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.csproj.Up2Date
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.dll
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\refint\DAOs.dll
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\DAOs.pdb
+E:\FPT\8th Sem\PRN231\clone3\backend\DAOs\obj\Debug\net7.0\ref\DAOs.dll

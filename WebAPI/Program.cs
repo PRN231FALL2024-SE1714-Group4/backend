@@ -29,6 +29,7 @@ builder.Services.AddScoped<IAreaService, AreaService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IWorkService, WorkService>();
+builder.Services.AddScoped<IReportService, ReportService>();
 
 
 //Add DbContext configuration

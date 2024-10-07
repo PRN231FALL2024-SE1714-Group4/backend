@@ -1,4 +1,5 @@
-﻿using BOs.DTOS;
+﻿using BOs;
+using BOs.DTOS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,10 @@ namespace Repos
 {
     public interface IReportService
     {
-        void CreateReport(CreateReportRequest request);
+        Report CreateReport(CreateReportRequest request);
+        Report UpdateReport(Guid reportId, CreateReportRequest request);
+        Report GetReportById(Guid reportId);
+        IEnumerable<Report> GetReports(Guid? workId = null);
+        bool DeleteReport(Guid reportId);
     }
 }

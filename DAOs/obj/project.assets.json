@@ -3830,33 +3830,35 @@
     ]
   },
   "packageFolders": {
-    "/Users/tranthihongphuc/.nuget/packages/": {}
+    "C:\\Users\\Adminn\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/DAOs.csproj",
+      "projectUniqueName": "E:\\backend\\DAOs\\DAOs.csproj",
       "projectName": "DAOs",
-      "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/DAOs.csproj",
-      "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
-      "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/DAOs/obj/",
+      "projectPath": "E:\\backend\\DAOs\\DAOs.csproj",
+      "packagesPath": "C:\\Users\\Adminn\\.nuget\\packages\\",
+      "outputPath": "E:\\backend\\DAOs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Adminn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj": {
-              "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj"
+            "E:\\backend\\BOs\\BOs.csproj": {
+              "projectPath": "E:\\backend\\BOs\\BOs.csproj"
             }
           }
         }
@@ -3865,6 +3867,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3886,7 +3893,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

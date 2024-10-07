@@ -65,12 +65,6 @@ namespace BOs
                 .HasForeignKey(r => r.WorkId)
                 .OnDelete(DeleteBehavior.NoAction); // Specify NoAction to avoid cycles
 
-            modelBuilder.Entity<Report>()
-                .HasOne(r => r.Cage) // Assuming Cage is another entity
-                .WithMany() // Adjust as needed
-                .HasForeignKey(r => r.CageID)
-                .OnDelete(DeleteBehavior.NoAction);
-
             base.OnModelCreating(modelBuilder);
         }
 

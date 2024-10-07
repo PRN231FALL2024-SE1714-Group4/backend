@@ -24,7 +24,7 @@ namespace Repos.Implements
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public WorkResponse CreateWork(CreateWorkRequest request)
+        public WorkResponse CreateWork(WorkCreateRequest request)
         {
             var currentUserId = this.GetCurrentUserId();
             var assigner = _unitOfWork.UserRepository.GetByID(currentUserId);
@@ -34,8 +34,9 @@ namespace Repos.Implements
             // Create new Work
             var work = new Work
             {
-                RoleID = assigner.RoleID,
-                AreaID = request.AreaID,
+                //RoleID = assigner.RoleID,
+                //AreaID = request.AreaID,
+                CageID = request.CageId,
                 AssignerID = currentUserId, // Set the current user as the assigner
                 AssigneeID = assigneeID,
                 Status = WorkStatus.OPEN,
@@ -70,7 +71,7 @@ namespace Repos.Implements
             var currentUserId = GetCurrentUserId();
             var assignedTasks = _unitOfWork.WorkRepository.Get(
                 filter: w => w.AssignerID == currentUserId,
-                includeProperties: "Assigner,Assignee,Area").ToList();
+                includeProperties: "Assigner,Assignee,Cage").ToList();
 
             return assignedTasks.Select(w => MapWorkToWorkResponse(w)).ToList();
         }
@@ -96,7 +97,7 @@ namespace Repos.Implements
         public WorkResponse GetWorkByID(Guid id)
         {
             var work = _unitOfWork.WorkRepository
-                .Get(filter: w => w.WorkId == id, includeProperties: "Area,Assigner,Assignee")
+                .Get(filter: w => w.WorkId == id, includeProperties: "Cage,Assigner,Assignee")
                 .FirstOrDefault();
 
             return MapWorkToWorkResponse(work);
@@ -105,14 +106,15 @@ namespace Repos.Implements
         private WorkResponse MapWorkToWorkResponse(Work work)
         {
             // Assuming completedTask and totalTask can be calculated somehow
-            int completedTasks = _unitOfWork.ReportRepository.Get(filter: r => r.Status == ReportStatus.DONE && r.WorkId == work.WorkId).Count();
-            int totalTasks = _unitOfWork.ReportRepository.Get(filter: r => r.WorkId == work.WorkId).ToList().Count();
+            //int completedTasks = _unitOfWork.ReportRepository.Get(filter: r => r.Status == ReportStatus.DONE && r.WorkId == work.WorkId).Count();
+            //int totalTasks = _unitOfWork.ReportRepository.Get(filter: r => r.WorkId == work.WorkId).ToList().Count();
 
             return new WorkResponse
             {
                 WorkId = work.WorkId,
-                RoleID = work.RoleID,
-                AreaID = work.AreaID,
+                //RoleID = work.RoleID,
+                //AreaID = work.AreaID,
+                CageID = work.CageID,
                 AssignerID = work.AssignerID,
                 AssigneeID = work.AssigneeID,
                 Status = work.Status,
@@ -120,8 +122,11 @@ namespace Repos.Implements
                 Description = work.Description,
                 StartDate = work.StartDate,
                 EndDate = work.EndDate,
-                compltedTask = completedTasks,
-                totalTask = totalTasks
+                //compltedTask = completedTasks,
+                //totalTask = totalTasks,
+                Cage = work.Cage,
+                Assignee = work.Assignee,
+                Assigner = work.Assigner,
             };
 
 
@@ -129,7 +134,52 @@ namespace Repos.Implements
 
         public List<Work> GetWorks()
         {
-            return _unitOfWork.WorkRepository.Get(includeProperties: "Area,Assigner,Assignee").ToList();
+            return _unitOfWork.WorkRepository.Get(includeProperties: "Cage,Assigner,Assignee").ToList();
         }
+
+        public WorkResponse UpdateWork(Guid id, WorkUpdateRequest request)
+        {
+            // Find the work by ID
+            var work = _unitOfWork.WorkRepository.GetByID(id);
+
+            if (work == null)
+            {
+                throw new Exception("Work not found.");
+            }
+
+            // Update the properties of the work with null-checking
+            work.Description = !string.IsNullOrEmpty(request.Description) ? request.Description : work.Description;
+            work.StartDate = request.StartDate ??  work.StartDate;
+            work.EndDate = request.EndDate ?? work.EndDate;
+            work.Shift = request.Shift ?? work.Shift;
+            work.AssigneeID = request.AssigneeID ?? work.AssigneeID;
+            work.Mission = request.Mission ?? work.Mission;
+            work.Status = request.Status ?? work.Status;
+
+            // Save the updated work
+            _unitOfWork.WorkRepository.Update(work);
+            _unitOfWork.Save();
+
+            // Return the updated WorkResponse
+            return MapWorkToWorkResponse(_unitOfWork.WorkRepository.Get(includeProperties: "Cage,Assigner,Assignee").FirstOrDefault());
+        }
+
+        public bool DeleteWork(Guid id)
+        {
+            // Find the work by ID
+            var work = _unitOfWork.WorkRepository.GetByID(id);
+
+            if (work == null)
+            {
+                throw new Exception("Work not found.");
+            }
+
+            // Remove the work
+            _unitOfWork.WorkRepository.Delete(work);
+            _unitOfWork.Save();
+
+            return true;
+        }
+
     }
 }

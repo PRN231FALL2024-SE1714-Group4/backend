@@ -11,10 +11,12 @@ namespace Repos
 {
     public interface IWorkService
     {
-        WorkResponse CreateWork(CreateWorkRequest request);
+        WorkResponse CreateWork(WorkCreateRequest request);
+        WorkResponse UpdateWork(Guid id, WorkUpdateRequest request);
         IEnumerable<WorkResponse> ViewMyWork();
         IEnumerable<WorkResponse> ViewAssignedTasks();
         WorkResponse GetWorkByID(Guid id);
         List<Work> GetWorks();
+        bool DeleteWork(Guid id);
     }
 }

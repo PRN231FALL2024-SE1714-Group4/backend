@@ -24,7 +24,7 @@ namespace WebAPI.Controllers
         // 1. Create Work (Assign Task)
         [HttpPost("create")]
         [JwtAuthorize("ADMIN", "MANAGER", "STAFF")]
-        public ActionResult<WorkResponse> CreateWork([FromBody] CreateWorkRequest request)
+        public ActionResult<WorkResponse> CreateWork([FromBody] WorkCreateRequest request)
         {
             try
             {
@@ -36,6 +36,22 @@ namespace WebAPI.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
+
+        [HttpPut("{id}")]
+        [JwtAuthorize("ADMIN", "MANAGER", "STAFF")]
+        public ActionResult<WorkResponse> UpdateWork(Guid id, [FromBody] WorkUpdateRequest request)
+        {
+            try
+            {
+                var updatedWork = _workservice.UpdateWork(id, request);
+                return Ok(updatedWork);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
 
         [HttpGet("{id}")]
         public ActionResult<WorkResponse> GetWork(Guid id)
@@ -108,6 +124,31 @@ namespace WebAPI.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        // DELETE: api/work/{id}
+        [HttpDelete("{id}")]
+        [JwtAuthorize("ADMIN", "MANAGER")]
+        public IActionResult DeleteWork(Guid id)
+        {
+            try
+            {
+                // Call the DeleteWork method from the service
+                var isDeleted = _workservice.DeleteWork(id);
+
+                if (isDeleted)
+                {
+                    return Ok(new { message = "Work deleted successfully." });
+                }
+                else
+                {
+                    return NotFound(new { message = "Work not found." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
             }
         }
 

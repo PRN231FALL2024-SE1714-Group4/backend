@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj": {}
+    "E:\\backend\\BOs\\BOs.csproj": {}
   },
   "projects": {
-    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj": {
+    "E:\\backend\\BOs\\BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj",
+        "projectUniqueName": "E:\\backend\\BOs\\BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/BOs.csproj",
-        "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
-        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/new-be/backend/BOs/obj/",
+        "projectPath": "E:\\backend\\BOs\\BOs.csproj",
+        "packagesPath": "C:\\Users\\Adminn\\.nuget\\packages\\",
+        "outputPath": "E:\\backend\\BOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Adminn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -92,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
