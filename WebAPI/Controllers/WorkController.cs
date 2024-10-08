@@ -23,7 +23,7 @@ namespace WebAPI.Controllers
 
         // 1. Create Work (Assign Task)
         [HttpPost("create")]
-        [JwtAuthorize("ADMIN", "MANAGER", "STAFF")]
+        [JwtAuthorize("ADMIN", "MANAGER")]
         public ActionResult<WorkResponse> CreateWork([FromBody] WorkCreateRequest request)
         {
             try
@@ -115,7 +115,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("")]
-        public ActionResult<List<Work>> getAllWorks()
+        public ActionResult<List<WorkResponse>> getAllWorks()
         {
             try
             {

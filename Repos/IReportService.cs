@@ -10,8 +10,8 @@ namespace Repos
 {
     public interface IReportService
     {
-        Report CreateReport(CreateReportRequest request);
-        Report UpdateReport(Guid reportId, CreateReportRequest request);
+        Report CreateReport(ReportCreateRequest request);
+        Report UpdateReport(Guid reportId, ReportUpdateRequest request);
         Report GetReportById(Guid reportId);
         IEnumerable<Report> GetReports(Guid? workId = null);
         bool DeleteReport(Guid reportId);

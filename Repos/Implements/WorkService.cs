@@ -59,7 +59,7 @@ namespace Repos.Implements
             var currentUserId = GetCurrentUserId();
             var works = _unitOfWork.WorkRepository.Get(
                 filter: w => w.AssigneeID == currentUserId,
-                includeProperties: "Assigner,Assignee,Area").ToList();
+                includeProperties: "Assigner,Assignee,Cage").ToList();
 
             return works.Select(w => MapWorkToWorkResponse(w)).ToList();
         }
@@ -108,7 +108,7 @@ namespace Repos.Implements
             // Assuming completedTask and totalTask can be calculated somehow
             //int completedTasks = _unitOfWork.ReportRepository.Get(filter: r => r.Status == ReportStatus.DONE && r.WorkId == work.WorkId).Count();
             //int totalTasks = _unitOfWork.ReportRepository.Get(filter: r => r.WorkId == work.WorkId).ToList().Count();
-
+            Area area = _unitOfWork.AreaRepository.GetByID(work.Cage.AreaID);
             return new WorkResponse
             {
                 WorkId = work.WorkId,
@@ -127,14 +127,16 @@ namespace Repos.Implements
                 Cage = work.Cage,
                 Assignee = work.Assignee,
                 Assigner = work.Assigner,
+                Area = area,
             };
 
 
         }
 
-        public List<Work> GetWorks()
+        public List<WorkResponse> GetWorks()
         {
-            return _unitOfWork.WorkRepository.Get(includeProperties: "Cage,Assigner,Assignee").ToList();
+            var works = _unitOfWork.WorkRepository.Get(includeProperties: "Cage,Assigner,Assignee").ToList();
+            return works.Select(w => MapWorkToWorkResponse(w)).ToList();
         }
 
         public WorkResponse UpdateWork(Guid id, WorkUpdateRequest request)

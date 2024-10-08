@@ -16,7 +16,7 @@ namespace Repos
         IEnumerable<WorkResponse> ViewMyWork();
         IEnumerable<WorkResponse> ViewAssignedTasks();
         WorkResponse GetWorkByID(Guid id);
-        List<Work> GetWorks();
+        List<WorkResponse> GetWorks();
         bool DeleteWork(Guid id);
     }
 }

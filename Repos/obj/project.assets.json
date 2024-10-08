@@ -3848,19 +3848,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adminn\\.nuget\\packages\\": {}
+    "C:\\Users\\ACER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\backend\\Repos\\Repos.csproj",
+      "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\Repos\\Repos.csproj",
       "projectName": "Repos",
-      "projectPath": "E:\\backend\\Repos\\Repos.csproj",
-      "packagesPath": "C:\\Users\\Adminn\\.nuget\\packages\\",
-      "outputPath": "E:\\backend\\Repos\\obj\\",
+      "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\Repos\\Repos.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\Repos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Adminn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3868,15 +3868,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\backend\\DAOs\\DAOs.csproj": {
-              "projectPath": "E:\\backend\\DAOs\\DAOs.csproj"
+            "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\DAOs\\DAOs.csproj": {
+              "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\DAOs\\DAOs.csproj"
             }
           }
         }
@@ -3906,12 +3905,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,9 +1,12 @@
 ﻿using BOs.DTOS;
 using Microsoft.AspNetCore.Mvc;
 using Repos;
+using WebAPI.Filter;
 
 namespace WebAPI.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ReportController : Controller
     {
         private readonly IReportService _reportService;
@@ -14,8 +17,9 @@ namespace WebAPI.Controllers
         }
 
         // 3. Create Report
-        [HttpPost("/create")]
-        public IActionResult CreateReport([FromBody] CreateReportRequest request)
+        [HttpPost("")]
+        [JwtAuthorize("STAFF")]
+        public IActionResult CreateReport([FromBody] ReportCreateRequest request)
         {
             try
             {
@@ -30,7 +34,8 @@ namespace WebAPI.Controllers
 
         // 2. PUT: api/reports/{id} (Update an existing report)
         [HttpPut("{id}")]
-        public IActionResult UpdateReport(Guid id, [FromBody] CreateReportRequest request)
+        [JwtAuthorize("STAFF")]
+        public IActionResult UpdateReport(Guid id, [FromBody] ReportUpdateRequest request)
         {
             try
             {
@@ -59,10 +64,17 @@ namespace WebAPI.Controllers
         }
 
         // 4. GET: api/reports (Get all reports or filtered by workId)
-        [HttpGet]
-        public IActionResult GetReports([FromQuery] Guid? workId)
+        [HttpGet("Work/{id}")]
+        public IActionResult GetReports(Guid id)
         {
-            var reports = _reportService.GetReports(workId);
+            var reports = _reportService.GetReports(id);
+            return Ok(reports);
+        }
+
+        [HttpGet("")]
+        public IActionResult GetReports()
+        {
+            var reports = _reportService.GetReports();
             return Ok(reports);
         }
 

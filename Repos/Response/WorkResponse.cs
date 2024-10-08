@@ -11,5 +11,6 @@ namespace Repos.Response
     {
         public int compltedTask { get; set; }
         public int totalTask { get; set; }
+        public Area Area { get; set; }
     }
 }
