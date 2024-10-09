@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\Repos\\Repos.csproj": {}
+    "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\Repos\\Repos.csproj": {}
   },
   "projects": {
-    "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\BOs\\BOs.csproj": {
+    "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\BOs\\BOs.csproj",
+        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\BOs\\BOs.csproj",
+        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\BOs.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\BOs\\obj\\",
+        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,14 +116,14 @@
         }
       }
     },
-    "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\DAOs\\DAOs.csproj": {
+    "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\DAOs\\DAOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\DAOs\\DAOs.csproj",
+        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\DAOs\\DAOs.csproj",
         "projectName": "DAOs",
-        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\DAOs\\DAOs.csproj",
+        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\DAOs\\DAOs.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\DAOs\\obj\\",
+        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\DAOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,8 +140,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\BOs\\BOs.csproj": {
-                "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\BOs\\BOs.csproj"
+              "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\BOs.csproj": {
+                "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\BOs.csproj"
               }
             }
           }
@@ -194,14 +194,14 @@
         }
       }
     },
-    "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\Repos\\Repos.csproj": {
+    "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\Repos\\Repos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\Repos\\Repos.csproj",
+        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\Repos\\Repos.csproj",
         "projectName": "Repos",
-        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\Repos\\Repos.csproj",
+        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\Repos\\Repos.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\Repos\\obj\\",
+        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\Repos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -218,8 +218,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\DAOs\\DAOs.csproj": {
-                "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone4\\backend\\DAOs\\DAOs.csproj"
+              "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\DAOs\\DAOs.csproj": {
+                "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\DAOs\\DAOs.csproj"
               }
             }
           }

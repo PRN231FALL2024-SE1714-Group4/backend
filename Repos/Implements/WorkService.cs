@@ -49,7 +49,7 @@ namespace Repos.Implements
             _unitOfWork.WorkRepository.Insert(work);
             _unitOfWork.Save();
 
-            var createdWork = _unitOfWork.WorkRepository.GetByID(work.WorkId);
+            var createdWork = this.GetWorkByID(work.WorkId);
             return MapWorkToWorkResponse(createdWork);
         }
 
