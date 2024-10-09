@@ -30,6 +30,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IWorkService, WorkService>();
 builder.Services.AddScoped<IReportService, ReportService>();
+builder.Services.AddScoped<IAnimalService, AnimalService>();
 
 
 //Add DbContext configuration

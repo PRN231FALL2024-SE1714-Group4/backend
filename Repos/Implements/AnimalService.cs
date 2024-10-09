@@ -10,11 +10,12 @@ using WebAPI.Request;
 
 namespace Repos.Implements
 {
-	public class AnimalService
-	{
+    public class AnimalService : IAnimalService
+    {
         private readonly IUnitOfWork _unitOfWork;
+
         public AnimalService(IUnitOfWork unitOfWork)
-		{
+        {
             _unitOfWork = unitOfWork;
         }
 
@@ -22,10 +23,11 @@ namespace Repos.Implements
         {
             return _unitOfWork.AnimalRepository.Get().ToList();
         }
+
         public async Task<Animal> GetAnimalById(Guid id)
         {
             return _unitOfWork.AnimalRepository
-                .Get(filter: a => a.AnimalID == id, includeProperties: "Area,Histories")
+                .Get(filter: a => a.AnimalID == id)
                 .FirstOrDefault();
         }
 
@@ -41,9 +43,39 @@ namespace Repos.Implements
 
             _unitOfWork.AnimalRepository.Insert(animal);
             _unitOfWork.Save();
-            return animal;
+            return _unitOfWork.AnimalRepository
+                .Get(filter: a => a.AnimalID == animal.AnimalID)
+                .FirstOrDefault();
         }
 
+        public async Task<Animal> UpdateAnimal(Guid id, AnimalUpdateRequest request)
+        {
+            // Retrieve the existing animal by ID
+            var existingAnimal = _unitOfWork.AnimalRepository
+                .Get(filter: a => a.AnimalID == id)
+                .FirstOrDefault();
+
+            if (existingAnimal == null)
+            {
+                // Handle case where the animal is not found
+                throw new Exception("Animal not found.");
+            }
+
+            // Update the properties of the existing animal
+            existingAnimal.Breed = request.Breed ?? existingAnimal.Breed;
+            existingAnimal.Gender = request.Gender ?? existingAnimal.Gender;
+            existingAnimal.Age = request.Age ?? existingAnimal.Age;
+            existingAnimal.Source = request.Source ?? existingAnimal.Source;
+
+            // Update the animal in the repository
+            _unitOfWork.AnimalRepository.Update(existingAnimal);
+            _unitOfWork.Save(); // Save changes asynchronously
+
+            // Return the updated animal
+            return _unitOfWork.AnimalRepository
+                .Get(filter: a => a.AnimalID == existingAnimal.AnimalID)
+                .FirstOrDefault();
+        }
     }
 }
 
