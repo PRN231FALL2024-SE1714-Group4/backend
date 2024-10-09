@@ -42,6 +42,11 @@ namespace Repos.Implements
                 DateTime = DateTime.UtcNow
             };
 
+            if (request.WorkStatus != null)
+            {
+                workReport.Status = request.WorkStatus ?? workReport.Status;
+            }
+
             _unitOfWork.ReportRepository.Insert(report);
             _unitOfWork.Save();
             return _unitOfWork.ReportRepository
@@ -65,6 +70,11 @@ namespace Repos.Implements
             report.Description = request.Description ?? report.Description;
             report.HealthDescription = request.HealthDescription ?? report.HealthDescription;
             //report.DateTime = DateTime.UtcNow ?? report;
+
+            if(request.WorkStatus != null)
+            {
+                workReport.Status = request.WorkStatus ?? workReport.Status;
+            }
 
             _unitOfWork.ReportRepository.Update(report);
             _unitOfWork.Save();

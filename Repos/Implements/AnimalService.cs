@@ -38,7 +38,8 @@ namespace Repos.Implements
                 Breed = request.Breed,
                 Gender = request.Gender,
                 Age = request.Age,
-                Source = request.Source
+                Source = request.Source,
+                DateOfBirth = (DateTime.Now).AddYears(-request.Age),
             };
 
             _unitOfWork.AnimalRepository.Insert(animal);
@@ -66,6 +67,7 @@ namespace Repos.Implements
             existingAnimal.Gender = request.Gender ?? existingAnimal.Gender;
             existingAnimal.Age = request.Age ?? existingAnimal.Age;
             existingAnimal.Source = request.Source ?? existingAnimal.Source;
+            existingAnimal.DateOfBirth = request.DateOfBirth ?? existingAnimal.DateOfBirth;
 
             // Update the animal in the repository
             _unitOfWork.AnimalRepository.Update(existingAnimal);

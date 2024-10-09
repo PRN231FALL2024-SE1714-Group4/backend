@@ -4029,11 +4029,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\BOs.csproj",
+      "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone6\\backend\\BOs\\BOs.csproj",
       "projectName": "BOs",
-      "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\BOs.csproj",
+      "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone6\\backend\\BOs\\BOs.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone5\\backend\\BOs\\obj\\",
+      "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone6\\backend\\BOs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
