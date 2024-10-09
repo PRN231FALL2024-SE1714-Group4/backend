@@ -1,14 +1,8 @@
-﻿using BOs.DTOS;
-using BOs;
+﻿using BOs;
+using BOs.DTOS;
+using BOs.Enum;
 using DAOs;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-using BOs.Enum;
 using Repos.Response;
 
 namespace Repos.Implements
@@ -43,7 +37,8 @@ namespace Repos.Implements
                 Shift = request.Shift,
                 Description = request.Description,
                 StartDate = request.StartDate,
-                EndDate = request.EndDate
+                EndDate = request.EndDate,
+                Mission = request.Mission
             };
 
             _unitOfWork.WorkRepository.Insert(work);
@@ -128,6 +123,7 @@ namespace Repos.Implements
                 Assignee = work.Assignee,
                 Assigner = work.Assigner,
                 Area = area,
+                Mission = work.Mission
             };
 
 
@@ -151,7 +147,7 @@ namespace Repos.Implements
 
             // Update the properties of the work with null-checking
             work.Description = !string.IsNullOrEmpty(request.Description) ? request.Description : work.Description;
-            work.StartDate = request.StartDate ??  work.StartDate;
+            work.StartDate = request.StartDate ?? work.StartDate;
             work.EndDate = request.EndDate ?? work.EndDate;
             work.Shift = request.Shift ?? work.Shift;
             work.AssigneeID = request.AssigneeID ?? work.AssigneeID;
