@@ -24,7 +24,7 @@ namespace BOs
         public WorkStatus Status { get; set; }
 
         [JsonConverter(typeof(JsonStringEnumConverter))]
-        public WorkShift Shift { get; set; }
+        public WorkShiftEnum Shift { get; set; }
 
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public WorkMission Mission { get; set; }

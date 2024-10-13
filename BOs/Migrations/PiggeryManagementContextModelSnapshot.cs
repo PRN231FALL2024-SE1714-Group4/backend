@@ -37,7 +37,7 @@ namespace BOs.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateOfBirth")
+                    b.Property<DateTime?>("DateOfBirth")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Gender")
@@ -245,6 +245,37 @@ namespace BOs.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("BOs.UserShift", b =>
+                {
+                    b.Property<Guid>("UserShiftId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("WorkShift")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserShiftId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserShifts");
+                });
+
             modelBuilder.Entity("BOs.Work", b =>
                 {
                     b.Property<Guid>("WorkId")
@@ -351,6 +382,17 @@ namespace BOs.Migrations
                         .IsRequired();
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("BOs.UserShift", b =>
+                {
+                    b.HasOne("BOs.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BOs.Work", b =>

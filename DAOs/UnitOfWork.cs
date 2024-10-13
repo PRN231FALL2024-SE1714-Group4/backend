@@ -19,6 +19,7 @@ namespace DAOs
         private GenericRepository<User> userRepository;
         private GenericRepository<Role> roleRepository;
         private GenericRepository<Work> workRepository;
+        private GenericRepository<UserShift> userShiftRepository;
         public UnitOfWork(PiggeryManagementContext _context)
         {
             context = _context;
@@ -85,6 +86,14 @@ namespace DAOs
             get
             {
                 return workRepository ??= new GenericRepository<Work>(context);
+            }
+        }
+
+        public IGenericRepository<UserShift> UserShiftRepository
+        {
+            get
+            {
+                return userShiftRepository ??= new GenericRepository<UserShift>(context);
             }
         }
 

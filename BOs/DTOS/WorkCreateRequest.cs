@@ -18,7 +18,7 @@ namespace BOs.DTOS
         [Required]
         public DateTime EndDate { get; set; } // End date of the task
         [Required]
-        public WorkShift Shift { get; set; } // Shift assigned for the task
+        public WorkShiftEnum Shift { get; set; } // Shift assigned for the task
         [Required]
         public Guid AssigneeID { get; set; }
         [Required]

@@ -17,6 +17,7 @@ namespace DAOs
         IGenericRepository<Role> RoleRepository { get; }
         IGenericRepository<User> UserRepository { get; }
         IGenericRepository<Work> WorkRepository { get; }
+        IGenericRepository<UserShift> UserShiftRepository { get; }
 
 
         void Save();

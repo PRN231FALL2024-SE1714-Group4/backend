@@ -18,6 +18,7 @@ namespace BOs
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Work> Works { get; set; }  // Fully qualify here
+        public DbSet<UserShift> UserShifts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -64,6 +65,9 @@ namespace BOs
                 .WithMany(w => w.Reports)
                 .HasForeignKey(r => r.WorkId)
                 .OnDelete(DeleteBehavior.NoAction); // Specify NoAction to avoid cycles
+
+            modelBuilder.Entity<UserShift>()
+                .HasOne(r => r.User);
 
             base.OnModelCreating(modelBuilder);
         }
