@@ -73,7 +73,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("me")]
-        [JwtAuthorize("ADMIN", "MANAGER")]
+        [JwtAuthorize("ADMIN", "MANAGER", "STAFF")]
         public ActionResult<User> getCurrentUser()
         {
             try

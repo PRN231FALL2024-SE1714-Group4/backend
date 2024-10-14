@@ -14,6 +14,7 @@ using System;
         {
             bool createUserShift(List<UserShiftRequest> userShiftRequests);
             List<WorkerInShiftResponse> getAllWorkerInShift(DateOnly fromDate, DateOnly toDate);
-            List<User> getAvailableUserForSpecificShift(DateOnly fromDate, DateOnly toDate, WorkShiftEnum workShiftEnum);
+            List<UserShiftTimeResponse> getAvailableUserForSpecificShift(DateOnly fromDate, DateOnly toDate, WorkShiftEnum workShiftEnum);
+            List<UserShift> getMyShift(DateOnly fromDate, DateOnly toDate);
         }
     }

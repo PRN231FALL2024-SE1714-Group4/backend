@@ -106,5 +106,37 @@ namespace WebAPI.Controllers
             }
         }
 
+        [HttpGet("me")]
+        [JwtAuthorize("MANAGER", "STAFF")]
+        public ActionResult<List<UserShift>> getMyShift([FromQuery] DateOnly fromDate, [FromQuery] DateOnly toDate)
+        {
+            // Check if the date range is valid
+            if (fromDate > toDate)
+            {
+                return BadRequest("Invalid date range.");
+            }
+
+            try
+            {
+                // Call the service method to get the current user's shifts
+                var userShifts = _userShiftService.getMyShift(fromDate, toDate);
+
+                // Check if any shifts were found for the current user
+                if (userShifts == null || !userShifts.Any())
+                {
+                    return NotFound("No shifts found for the specified date range.");
+                }
+
+                // Return the list of user shifts
+                return Ok(userShifts);
+            }
+            catch (Exception ex)
+            {
+                // Handle any unexpected errors
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
     }
 }
