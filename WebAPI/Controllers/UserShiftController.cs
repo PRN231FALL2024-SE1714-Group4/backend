@@ -79,7 +79,7 @@ namespace WebAPI.Controllers
 
         [HttpGet("available-users")]
         [JwtAuthorize("MANAGER", "STAFF")]
-        public ActionResult<List<User>> getUser([FromQuery] DateOnly fromDate, [FromQuery] DateOnly toDate, WorkShiftEnum workShiftEnum)
+        public ActionResult<List<UserShiftTimeResponse>> getUser([FromQuery] DateOnly fromDate, [FromQuery] DateOnly toDate, WorkShiftEnum workShiftEnum)
         {
             // Check if the date range is valid
             if (fromDate > toDate)
@@ -138,5 +138,56 @@ namespace WebAPI.Controllers
         }
 
 
+
+        [HttpPut("{id}")]
+        [JwtAuthorize("MANAGER")]
+        public IActionResult EditUserShift(Guid id, [FromBody] UserShiftRequest updatedUserShiftRequests)
+        {
+            if (updatedUserShiftRequests == null || updatedUserShiftRequests != null)
+            {
+                return BadRequest("Invalid request data.");
+            }
+
+            try
+            {
+                bool result = _userShiftService.editUserShift(id, updatedUserShiftRequests);
+
+                if (result)
+                {
+                    return Ok("User shifts updated successfully.");
+                }
+                else
+                {
+                    return StatusCode(500, "An error occurred while updating user shifts.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        [HttpDelete("{id}")]
+        [JwtAuthorize("MANAGER")]
+        public IActionResult DeleteUserShift(Guid id)
+        {
+            try
+            {
+                bool result = _userShiftService.deleteUserShift(id);
+
+                if (result)
+                {
+                    return Ok("User shift deleted successfully.");
+                }
+                else
+                {
+                    return NotFound("Shift not found.");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

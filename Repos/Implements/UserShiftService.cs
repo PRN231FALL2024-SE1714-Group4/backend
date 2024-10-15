@@ -107,67 +107,79 @@ namespace Repos.Implements
         public List<UserShiftTimeResponse> getAvailableUserForSpecificShift(DateOnly fromDate, DateOnly toDate, WorkShiftEnum workShiftEnum)
         {
             // List to hold available users with their estimated times
-            //var availableUsers = new List<UserShiftTimeResponse>();
+            var availableUsers = new List<UserShiftTimeResponse>();
 
-            //// Loop through each day from 'fromDate' to 'toDate'
-            //for (var date = fromDate; date <= toDate; date = date.AddDays(1))
-            //{
-            //    // Convert the current 'DateOnly' to 'DateTime' for querying
-            //    var fromDateTime = date.ToDateTime(new TimeOnly(0, 0));  // Start of the day
-            //    var toDateTime = date.ToDateTime(new TimeOnly(23, 59));  // End of the day
+            // Loop through each day from 'fromDate' to 'toDate'
+            for (var date = fromDate; date <= toDate; date = date.AddDays(1))
+            {
+                // Convert the current 'DateOnly' to 'DateTime' for querying
+                var fromDateTime = date.ToDateTime(new TimeOnly(0, 0));  // Start of the day
+                var toDateTime = date.ToDateTime(new TimeOnly(23, 59));  // End of the day
 
-            //    // Fetch all shifts for the specific work shift on this date
-            //    var userShifts = _unitOfWork.UserShiftRepository.Get(
-            //        filter: x => x.WorkShift == workShiftEnum &&
-            //                     x.StartDate <= toDateTime &&
-            //                     x.EndDate >= fromDateTime,
-            //        includeProperties: "User"
-            //    ).ToList();
+                // Fetch all shifts for the specific work shift on this date
+                var userShifts = _unitOfWork.UserShiftRepository.Get(
+                    filter: x => x.WorkShift == workShiftEnum &&
+                                 x.StartDate <= toDateTime &&
+                                 x.EndDate >= fromDateTime,
+                    includeProperties: "User"
+                ).ToList();
 
-            //    float totalEstimateTime = 0;
-            //    // Loop through each shift to calculate the estimate time
-            //    foreach (var shift in userShifts)
-            //    {
-            //        // Initialize total estimate time for this shift
+                // Loop through each shift to calculate the estimate time for works assigned to the user
+                foreach (var shift in userShifts)
+                {
+                    // Fetch all works assigned to the current user for this shift
+                    var works = _unitOfWork.WorkRepository.Get(
+                        filter: x => x.Shift == workShiftEnum &&
+                                     x.StartDate <= toDateTime &&
+                                     x.EndDate >= fromDateTime &&
+                                     x.AssigneeID == shift.UserId
+                    ).ToList();
 
-            //        var missionsInShift = new List<WorkMission>();  // To store all missions in this shift
-            //        var works = _unitOfWork.WorkRepository.Get(
-            //            filter: x => x.Shift = workShiftEnum &&
-            //                     x.StartDate <= toDateTime &&
-            //                     x.EndDate >= fromDateTime,
-            //            );
-            //        // Calculate EstimateTime based on missions assigned in this shift
-            //        switch (shift.)
-            //        {
-            //            case WorkMission.FEED:
-            //            case WorkMission.CLEAN_CAGE:
-            //            case WorkMission.ANIMAL_MOVE:
-            //                totalEstimateTime += 0.75f;
-            //                missionsInShift.Add(mission);  // Collect missions for response
-            //                break;
+                    // If the user has works assigned, calculate the total estimated time
+                    if (works.Any())
+                    {
+                        float totalEstimateTime = 0;
 
-            //            // You can add more mission cases if necessary
-            //            default:
-            //                break;
-            //        }
-            //        // Add the user and their shift information to the available users list
-            //        availableUsers.Add(new UserShiftTimeResponse
-            //        {
-            //            user = shift.User,                 // The user assigned to the shift
-            //            workShift = shift.WorkShift,       // The type of shift (morning, evening, etc.)
-            //            date = date,                      // The specific date for the shift
-            //            EstimateTime = totalEstimateTime,  // The total estimated time for this shift
-            //            WorkMissions = missionsInShift     // List of work missions for the shift
-            //        });
-            //    }
-            //}
+                        // Calculate estimate time based on each work's mission
+                        foreach (var work in works)
+                        {
+                            totalEstimateTime += CalculateEstimateTimeForMission(work.Mission);
+                        }
 
-            //// Return the list of users with their shifts and estimated times for the specific work shift
-            //return availableUsers;
-            throw new ApplicationException();
+                        // Add the user with the calculated estimate time to the list
+                        availableUsers.Add(new UserShiftTimeResponse
+                        {
+                            user = shift.User,
+                            workShift = workShiftEnum,
+                            date = date,
+                            EstimateTime = totalEstimateTime,
+                            WorkMissions = works.Select(w => w.Mission).ToList()  // Add the list of missions (optional)
+                        });
+                    }
+                }
+            }
+
+            // Return the list of users with their shifts and estimated times for the specific work shift
+            return availableUsers;
         }
 
-
+        // Helper method to calculate estimate time based on the mission type
+        private float CalculateEstimateTimeForMission(WorkMission mission)
+        {
+            // Define the estimated time for each mission type
+            switch (mission)
+            {
+                case WorkMission.FEED:
+                    return 0.5f; // 30 minutes
+                case WorkMission.CLEAN_CAGE:
+                    return 0.75f; // 45 minutes
+                case WorkMission.ANIMAL_MOVE:
+                    return 1.0f; // 1 hour
+                                 // Add additional cases for other mission types as needed
+                default:
+                    return 0;
+            }
+        }
 
         public List<UserShift> getMyShift(DateOnly fromDate, DateOnly toDate)
         {
@@ -189,6 +201,54 @@ namespace Repos.Implements
             return userShifts;
         }
 
+        public bool editUserShift(Guid shiftId, UserShiftRequest updatedShiftRequest)
+        {
+            // Fetch the shift by its ID
+            var existingShift = _unitOfWork.UserShiftRepository.GetByID(shiftId);
+            if (existingShift == null)
+            {
+                throw new Exception("Shift not found.");
+            }
+
+            // Update the shift details
+            existingShift.UserId = updatedShiftRequest.UserId ?? this.GetCurrentUserId();
+            existingShift.StartDate = updatedShiftRequest.StartDate.ToDateTime(new TimeOnly(0, 0));
+            existingShift.EndDate = updatedShiftRequest.EndDate.ToDateTime(new TimeOnly(23, 59));
+            existingShift.WorkShift = updatedShiftRequest.WorkShift;
+
+            // Check if the updated shift has suitable time and no duplicates
+            if (!this.checkSuitableTime(existingShift))
+            {
+                throw new Exception("Invalid time for the shift.");
+            }
+
+            if (this.checkDuplicated(existingShift))
+            {
+                throw new Exception("Shift conflict detected.");
+            }
+
+            // Save changes
+            _unitOfWork.UserShiftRepository.Update(existingShift);
+            _unitOfWork.Save();
+
+            return true;
+        }
+
+        public bool deleteUserShift(Guid shiftId)
+        {
+            // Fetch the shift by its ID
+            var existingShift = _unitOfWork.UserShiftRepository.GetByID(shiftId);
+            if (existingShift == null)
+            {
+                throw new Exception("Shift not found.");
+            }
+
+            // Delete the shift
+            _unitOfWork.UserShiftRepository.Delete(existingShift);
+            _unitOfWork.Save();
+
+            return true;
+        }
 
         private bool checkDuplicated(UserShift shift)
         {
@@ -235,6 +295,14 @@ namespace Repos.Implements
             throw new Exception("User ID not found.");
         }
 
-        
+        public List<UserShift> getAllUserShifts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public UserShift getUserShiftById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
