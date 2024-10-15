@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\",
+  "WorkspaceRootPath": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone8\\backend\\repos\\implements\\usershiftservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\usershiftservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\webapi\\controllers\\usershiftcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\webapi\\controllers\\usershiftcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\usershiftcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\repos\\iusershiftservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone9\\backend\\repos\\implements\\usershiftservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\usershiftservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\repos\\iusershiftservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\iusershiftservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\repos\\implements\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\repos\\implements\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\bos\\enum\\workmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\bos\\enum\\workmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\enum\\workmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\bos\\usershift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\bos\\usershift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\usershift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -80,9 +80,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\Repos\\Implements\\UserService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\Repos\\Implements\\UserService.cs",
               "RelativeDocumentMoniker": "Repos\\Implements\\UserService.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\Repos\\Implements\\UserService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\Repos\\Implements\\UserService.cs",
               "RelativeToolTip": "Repos\\Implements\\UserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -92,9 +92,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "WorkMission.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\BOs\\Enum\\WorkMission.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\BOs\\Enum\\WorkMission.cs",
               "RelativeDocumentMoniker": "BOs\\Enum\\WorkMission.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\BOs\\Enum\\WorkMission.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\BOs\\Enum\\WorkMission.cs",
               "RelativeToolTip": "BOs\\Enum\\WorkMission.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -102,35 +102,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserShiftController.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\WebAPI\\Controllers\\UserShiftController.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\WebAPI\\Controllers\\UserShiftController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\UserShiftController.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\WebAPI\\Controllers\\UserShiftController.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\WebAPI\\Controllers\\UserShiftController.cs",
               "RelativeToolTip": "WebAPI\\Controllers\\UserShiftController.cs",
-              "ViewState": "AQIAAJcAAAAAAAAAAAAIwHgAAABLAAAA",
+              "ViewState": "AQIAAM4AAAAAAAAAAADwv98AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T12:03:04.932Z"
+              "WhenOpened": "2024-10-15T12:03:04.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "IUserShiftService.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\Repos\\IUserShiftService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\Repos\\IUserShiftService.cs",
               "RelativeDocumentMoniker": "Repos\\IUserShiftService.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\Repos\\IUserShiftService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\Repos\\IUserShiftService.cs",
               "RelativeToolTip": "Repos\\IUserShiftService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T12:02:50.842Z"
+              "WhenOpened": "2024-10-15T12:02:50.842Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Work.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\BOs\\Work.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\BOs\\Work.cs",
               "RelativeDocumentMoniker": "BOs\\Work.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\BOs\\Work.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\BOs\\Work.cs",
               "RelativeToolTip": "BOs\\Work.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAzwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -140,9 +142,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "UserShift.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\BOs\\UserShift.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\BOs\\UserShift.cs",
               "RelativeDocumentMoniker": "BOs\\UserShift.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\BOs\\UserShift.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\BOs\\UserShift.cs",
               "RelativeToolTip": "BOs\\UserShift.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -150,13 +152,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserShiftService.cs",
-              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\Repos\\Implements\\UserShiftService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\Repos\\Implements\\UserShiftService.cs",
               "RelativeDocumentMoniker": "Repos\\Implements\\UserShiftService.cs",
-              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\Repos\\Implements\\UserShiftService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\Repos\\Implements\\UserShiftService.cs",
               "RelativeToolTip": "Repos\\Implements\\UserShiftService.cs",
-              "ViewState": "AQIAACQBAAAAAAAAAAAcwA4AAAAkAAAA",
+              "ViewState": "AQIAACcBAAAAAAAAAAAqwDgBAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T05:31:26.877Z",
               "EditorCaption": ""

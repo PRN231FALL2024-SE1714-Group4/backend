@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Repos.Implements
 {
@@ -295,14 +296,26 @@ namespace Repos.Implements
             throw new Exception("User ID not found.");
         }
 
-        public List<UserShift> getAllUserShifts()
+        public List<UserShift> getAllUserShifts(DateOnly fromDate, DateOnly toDate)
         {
-            throw new NotImplementedException();
+            // Convert the current 'DateOnly' to 'DateTime' for querying
+            var fromDateTime = fromDate.ToDateTime(new TimeOnly(0, 0));  // Start of the day
+            var toDateTime = toDate.ToDateTime(new TimeOnly(23, 59));  // End of the day
+
+            var shifts = _unitOfWork.UserShiftRepository.Get(
+                    filter: x => x.StartDate <= toDateTime && x.EndDate >= fromDateTime,
+                    includeProperties: "User")
+                .ToList();
+
+            return shifts;
         }
 
-        public UserShift getUserShiftById(int id)
+        public UserShift getUserShiftById(Guid id)
         {
-            throw new NotImplementedException();
+            return _unitOfWork.UserShiftRepository
+                .Get(filter: x => x.UserShiftId == id,
+                    includeProperties: "User")
+                .FirstOrDefault();
         }
     }
 }

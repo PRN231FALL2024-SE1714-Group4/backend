@@ -12319,11 +12319,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\WebAPI\\WebAPI.csproj",
+      "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\WebAPI\\obj\\",
+      "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12340,8 +12340,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\Repos\\Repos.csproj": {
-              "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone8\\backend\\Repos\\Repos.csproj"
+            "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\Repos\\Repos.csproj": {
+              "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone9\\backend\\Repos\\Repos.csproj"
             }
           }
         }

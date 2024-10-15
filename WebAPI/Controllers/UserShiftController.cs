@@ -189,5 +189,48 @@ namespace WebAPI.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpGet]
+        [JwtAuthorize("MANAGER")]
+        public ActionResult<List<UserShift>> GetAllUserShifts([FromQuery] DateOnly fromDate, [FromQuery] DateOnly toDate)
+        {
+            try
+            {
+                var userShifts = _userShiftService.getAllUserShifts(fromDate, toDate);
+
+                if (userShifts == null || !userShifts.Any())
+                {
+                    return NotFound("No user shifts found.");
+                }
+
+                return Ok(userShifts);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        // Get User Shift by ID
+        [HttpGet("{id}")]
+        [JwtAuthorize("MANAGER", "STAFF")]
+        public ActionResult<UserShift> GetUserShiftById(Guid id)
+        {
+            try
+            {
+                var userShift = _userShiftService.getUserShiftById(id);
+
+                if (userShift == null)
+                {
+                    return NotFound($"No user shift found with ID {id}.");
+                }
+
+                return Ok(userShift);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
