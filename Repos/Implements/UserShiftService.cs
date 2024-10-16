@@ -157,6 +157,17 @@ namespace Repos.Implements
                             WorkMissions = works.Select(w => w.Mission).ToList()  // Add the list of missions (optional)
                         });
                     }
+                    else
+                    {
+                        availableUsers.Add(new UserShiftTimeResponse
+                        {
+                            user = shift.User,
+                            workShift = workShiftEnum,
+                            date = date,
+                            EstimateTime = 0,
+                            WorkMissions = null  // Add the list of missions (optional)
+                        });
+                    }
                 }
             }
 
