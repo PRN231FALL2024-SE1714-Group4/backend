@@ -78,6 +78,23 @@ namespace Repos.Implements
                 .Get(filter: a => a.AnimalID == existingAnimal.AnimalID)
                 .FirstOrDefault();
         }
+
+        public async Task<bool> DeleteAnimal(Guid id)
+        {
+            var existingAnimal = _unitOfWork.AnimalRepository
+                .Get(filter: a => a.AnimalID == id)
+                .FirstOrDefault();
+
+            if (existingAnimal == null)
+            {
+                // Handle case where the animal is not found
+                throw new Exception("Animal not found.");
+            }
+
+            _unitOfWork.AnimalRepository.Delete(existingAnimal);
+            _unitOfWork.Save();
+            return true;
+        }
     }
 }
 

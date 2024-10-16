@@ -117,12 +117,18 @@ namespace BOs.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("FromDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<Guid>("HistoryID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ToDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");

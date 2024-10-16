@@ -66,5 +66,17 @@ namespace WebAPI.Controllers
 
             return Ok(updateAnimal);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteAnimal(Guid id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var updateAnimal = _animalService.DeleteAnimal(id);
+            return Ok();
+        }
     }
 }

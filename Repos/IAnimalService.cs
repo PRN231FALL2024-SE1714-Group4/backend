@@ -14,5 +14,6 @@ namespace Repos
         Task<Animal> GetAnimalById(Guid id);
         Task<Animal> CreateAnimal(AnimalCreateRequest request);
         Task<Animal> UpdateAnimal(Guid id, AnimalUpdateRequest request);
+        Task<bool> DeleteAnimal(Guid id);
     }
 }

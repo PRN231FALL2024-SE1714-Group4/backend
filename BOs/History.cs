@@ -18,6 +18,9 @@ namespace BOs
         public Guid CageID { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }
+        // Nullable FromDate and ToDate fields
+        public DateTime? FromDate { get; set; }
+        public DateTime? ToDate { get; set; }
 
         public virtual Animal Animal { get; set; }
         public virtual Cage Cage { get; set; }
