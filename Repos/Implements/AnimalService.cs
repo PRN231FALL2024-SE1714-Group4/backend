@@ -67,7 +67,9 @@ namespace Repos.Implements
             existingAnimal.Gender = request.Gender ?? existingAnimal.Gender;
             existingAnimal.Age = request.Age ?? existingAnimal.Age;
             existingAnimal.Source = request.Source ?? existingAnimal.Source;
-            existingAnimal.DateOfBirth = request.DateOfBirth ?? existingAnimal.DateOfBirth;
+
+            if(request.Age != null)
+                existingAnimal.DateOfBirth = DateTime.UtcNow.AddYears(-(request.Age ?? existingAnimal.Age));
 
             // Update the animal in the repository
             _unitOfWork.AnimalRepository.Update(existingAnimal);

@@ -21,9 +21,7 @@ namespace Repos.Implements
 
         public async Task<List<History>> GetAllHistoriesAsync()
         {
-            return _unitOfWork.HistoryRepository
-                .Get()
-                .ToList();
+            return _unitOfWork.HistoryRepository.Get().ToList();
         }
 
         public async Task<History> GetHistoryByIdAsync(Guid historyId)
@@ -34,7 +32,7 @@ namespace Repos.Implements
                 .FirstOrDefault();
         }
 
-        public async Task<History> CreateHistoryAsync(CreateHistoryRequest request)
+        public async Task<History> CreateHistoryAsync(HistoryCreateRequest request)
         {
             var newHistory = new History
             {
@@ -58,28 +56,30 @@ namespace Repos.Implements
             return newHistory;
         }
 
-        public async Task<History> UpdateHistoryAsync(Guid historyId, CreateHistoryRequest request)
+        public async Task<History> UpdateHistoryAsync(Guid historyId, HistoryUpdateRequest request)
         {
-            //var existingHistory = await _context.Histories.FindAsync(historyId);
+            var existingHistory = _unitOfWork.HistoryRepository
+                .Get(filter: x => x.HistoryID == historyId)
+                .FirstOrDefault();
 
-            //if (existingHistory == null)
-            //{
-            //    return null; // or throw an exception, based on your needs
-            //}
+            if (existingHistory == null)
+            {
+                return null; // or throw an exception, based on your needs
+            }
 
-            //// Update the fields
-            //existingHistory.AnimalID = request.AnimalID;
-            //existingHistory.CageID = request.CageID;
-            //existingHistory.Description = request.Description;
-            //existingHistory.Status = request.Status;
-            //existingHistory.FromDate = request.FromDate;
-            //existingHistory.ToDate = request.ToDate;
+            // Update the fields
+            existingHistory.AnimalID = request.AnimalID ?? existingHistory.AnimalID;
+            existingHistory.CageID = request.CageID ?? existingHistory.CageID;
+            existingHistory.Description = request.Description ?? existingHistory.Description;
+            existingHistory.Status = request.Status ?? existingHistory.Status;
+            existingHistory.FromDate = request.FromDate ?? existingHistory.FromDate;
+            existingHistory.ToDate = request.ToDate ?? existingHistory.ToDate;
 
-            //_context.Histories.Update(existingHistory);
-            //await _context.SaveChangesAsync();
+            _unitOfWork.HistoryRepository.Update(existingHistory);
+            _unitOfWork.Save();
 
-            //return existingHistory;
-            throw new Exception();
+            return existingHistory;
+            //throw new Exception();
         }
 
         public async Task<bool> DeleteHistoryAsync(Guid historyId)

@@ -13,6 +13,6 @@ namespace BOs.DTOS
         public AnimalGender? Gender { get; set; }
         public int? Age { get; set; }
         public string? Source { get; set; }
-        public DateTime? DateOfBirth { get; set; }
+        //public DateTime? DateOfBirth { get; set; }
     }
 }

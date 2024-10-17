@@ -7,17 +7,15 @@ using System.Threading.Tasks;
 
 namespace BOs.DTOS
 {
-    public class CreateHistoryRequest
+    public class HistoryUpdateRequest
     {
-        [Required]
-        public Guid AnimalID { get; set; }
+        public Guid? AnimalID { get; set; }
 
-        [Required]
-        public Guid CageID { get; set; }
+        public Guid? CageID { get; set; }
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
-        public string Status { get; set; }
+        public string? Status { get; set; }
 
         public DateTime? FromDate { get; set; }
 

@@ -12314,19 +12314,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACER\\.nuget\\packages\\": {}
+    "C:\\Users\\acer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone10\\backend\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\acer\\Downloads\\backend (2)\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone10\\backend\\WebAPI\\WebAPI.csproj",
-      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone10\\backend\\WebAPI\\obj\\",
+      "projectPath": "C:\\Users\\acer\\Downloads\\backend (2)\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\acer\\Downloads\\backend (2)\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12334,14 +12339,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\FPT\\8th Sem\\PRN231\\clone10\\backend\\Repos\\Repos.csproj": {
-              "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone10\\backend\\Repos\\Repos.csproj"
+            "C:\\Users\\acer\\Downloads\\backend (2)\\Repos\\Repos.csproj": {
+              "projectPath": "C:\\Users\\acer\\Downloads\\backend (2)\\Repos\\Repos.csproj"
             }
           }
         }
