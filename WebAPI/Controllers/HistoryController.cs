@@ -40,7 +40,7 @@ namespace WebAPI.Controllers
 
         // POST: api/History
         [HttpPost]
-        public async Task<IActionResult> CreateHistory([FromBody] CreateHistoryRequest request)
+        public async Task<IActionResult> CreateHistory([FromBody] HistoryCreateRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -52,34 +52,34 @@ namespace WebAPI.Controllers
         }
 
         // PUT: api/History/{id}
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> UpdateHistory(Guid id, [FromBody] CreateHistoryRequest request)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest(ModelState);
-        //    }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateHistory(Guid id, [FromBody] HistoryUpdateRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-        //    var updatedHistory = await _historyService.UpdateHistoryAsync(id, request);
-        //    if (updatedHistory == null)
-        //    {
-        //        return NotFound();
-        //    }
+            var updatedHistory = await _historyService.UpdateHistoryAsync(id, request);
+            if (updatedHistory == null)
+            {
+                return NotFound();
+            }
 
-        //    return Ok(updatedHistory);
-        //}
+            return Ok(updatedHistory);
+        }
 
         // DELETE: api/History/{id}
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteHistory(Guid id)
-        //{
-        //    var success = await _historyService.DeleteHistoryAsync(id);
-        //    if (!success)
-        //    {
-        //        return NotFound();
-        //    }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteHistory(Guid id)
+        {
+            var success = await _historyService.DeleteHistoryAsync(id);
+            if (!success)
+            {
+                return NotFound();
+            }
 
-        //    return OK(success);
-        //}
+            return Ok();
+        }
     }
 }
