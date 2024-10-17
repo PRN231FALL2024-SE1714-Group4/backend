@@ -21,7 +21,7 @@ namespace Repos.Implements
 
         public async Task<List<History>> GetAllHistoriesAsync()
         {
-            return _unitOfWork.HistoryRepository.Get().ToList();
+            return _unitOfWork.HistoryRepository.Get(includeProperties: "Cage,Animal").ToList();
         }
 
         public async Task<History> GetHistoryByIdAsync(Guid historyId)
