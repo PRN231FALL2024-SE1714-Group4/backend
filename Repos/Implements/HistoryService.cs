@@ -50,9 +50,9 @@ namespace Repos.Implements
             var currentCageOfAnimal = _unitOfWork.HistoryRepository
                 .Get(filter: x => x.AnimalID == request.AnimalID &&
                     (x.ToDate == null || x.ToDate >= DateTime.UtcNow))
-                .FirstOrDefault().Cage;
+                .ToList();
 
-            if(currentCageOfAnimal != null)
+            if(currentCageOfAnimal.Count != 0)
             {
                 throw new Exception("Animal was in another Cage.");
             }
@@ -63,7 +63,7 @@ namespace Repos.Implements
                 AnimalID = request.AnimalID,
                 CageID = request.CageID,
                 Description = request.Description,
-                Status = request.Status,
+                Status = "",
                 FromDate = request.FromDate,
                 ToDate = request.ToDate
             };
@@ -94,7 +94,7 @@ namespace Repos.Implements
             existingHistory.AnimalID = request.AnimalID ?? existingHistory.AnimalID;
             existingHistory.CageID = request.CageID ?? existingHistory.CageID;
             existingHistory.Description = request.Description ?? existingHistory.Description;
-            existingHistory.Status = request.Status ?? existingHistory.Status;
+            //existingHistory.Status = request.Status ?? existingHistory.Status;
             existingHistory.FromDate = request.FromDate ?? existingHistory.FromDate;
             existingHistory.ToDate = request.ToDate ?? existingHistory.ToDate;
 

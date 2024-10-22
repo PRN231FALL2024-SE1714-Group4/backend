@@ -1,4 +1,5 @@
 ﻿using BOs;
+using BOs.DTOS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,8 @@ namespace Repos
     {
         List<HealthReport> GetAllHealthReports();
         HealthReport GetHealthReportById(Guid id);
-        void AddHealthReport(HealthReport healthReport);
-        bool UpdateHealthReport(Guid id, HealthReport healthReport);
+        void AddHealthReport(HealthReportCreateRequest HealthReportCreate);
+        bool UpdateHealthReport(Guid id, HealthReportUpdateRequest healthReportUpdate);
         bool DeleteHealthReport(Guid id);
     }
 }

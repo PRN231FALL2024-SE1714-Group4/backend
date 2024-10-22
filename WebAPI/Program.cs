@@ -33,6 +33,7 @@ builder.Services.AddScoped<IReportService, ReportService>();
 builder.Services.AddScoped<IAnimalService, AnimalService>();
 builder.Services.AddScoped<IUserShiftService, UserShiftService>();
 builder.Services.AddScoped<IHistoryService, HistoryService>();
+builder.Services.AddScoped<IHealthReportService, HealthReportService>();
 
 
 //Add DbContext configuration

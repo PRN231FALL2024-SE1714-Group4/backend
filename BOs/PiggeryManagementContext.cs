@@ -83,6 +83,13 @@ namespace BOs
                 .WithMany(a => a.Histories)
                 .HasForeignKey(h => h.CageID);
 
+            modelBuilder.Entity<HealthReport>()
+                .Property(hr => hr.Status)
+                .HasConversion<string>();
+
+            modelBuilder.Entity<HealthReport>()
+                .HasOne(r => r.User);
+
 
             base.OnModelCreating(modelBuilder);
         }

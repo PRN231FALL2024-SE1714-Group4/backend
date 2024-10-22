@@ -118,12 +118,21 @@ namespace BOs.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserID")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<int>("WorkShift")
                         .HasColumnType("int");
 
                     b.HasKey("HelthReportID");
 
                     b.HasIndex("CageID");
+
+                    b.HasIndex("UserID");
 
                     b.ToTable("HealthReports");
                 });
@@ -376,7 +385,15 @@ namespace BOs.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BOs.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Cage");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("BOs.History", b =>
