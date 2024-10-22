@@ -1,46 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\acer\\Downloads\\backend (2)\\",
+  "WorkspaceRootPath": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\repos\\implements\\historyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\repos\\implements\\historyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\historyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|c:\\users\\acer\\downloads\\backend (2)\\webapi\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\bos\\dtos\\animalupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\dtos\\animalupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\bos\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\work.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\repos\\ihistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\ihistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\bos\\dtos\\historyupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\dtos\\historyupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\bos\\dtos\\historycreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\dtos\\historycreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\repos\\implements\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\repos\\implements\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\animalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|C:\\Users\\acer\\Downloads\\backend (2)\\bos\\dtos\\reportcreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\dtos\\reportcreaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\repos\\ihealthreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\ihealthreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\repos\\icageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\icageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\repos\\implements\\healthreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\healthreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\bos\\piggerymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\piggerymanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\bos\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\bos\\healthreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\healthreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\repos\\implements\\cageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\implements\\cageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\repos\\ianimalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60D2370A-5D8A-4F44-9247-B5AE87C7F6AB}|Repos\\Repos.csproj|solutionrelative:repos\\ianimalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\webapi\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\webapi\\controllers\\cagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3318258B-917F-4260-A54C-739DF969819B}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\cagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\bos\\migrations\\piggerymanagementcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\migrations\\piggerymanagementcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\bos\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|e:\\fpt\\8th sem\\prn231\\clone11\\backend\\bos\\usershift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8176530-D991-44AA-8925-B1820AB32297}|BOs\\BOs.csproj|solutionrelative:bos\\usershift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,129 +70,242 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 15,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AnimalService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\Repos\\Implements\\AnimalService.cs",
-              "RelativeDocumentMoniker": "Repos\\Implements\\AnimalService.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\Repos\\Implements\\AnimalService.cs",
-              "RelativeToolTip": "Repos\\Implements\\AnimalService.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowEUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:21:14.468Z"
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:57:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:59:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:75:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:77:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AnimalUpdateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\DTOS\\AnimalUpdateRequest.cs",
-              "RelativeDocumentMoniker": "BOs\\DTOS\\AnimalUpdateRequest.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\DTOS\\AnimalUpdateRequest.cs",
-              "RelativeToolTip": "BOs\\DTOS\\AnimalUpdateRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:20:38.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HistoryCreateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\DTOS\\HistoryCreateRequest.cs",
-              "RelativeDocumentMoniker": "BOs\\DTOS\\HistoryCreateRequest.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\DTOS\\HistoryCreateRequest.cs",
-              "RelativeToolTip": "BOs\\DTOS\\HistoryCreateRequest.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:19:56.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReportCreateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\DTOS\\ReportCreateRequest.cs",
-              "RelativeDocumentMoniker": "BOs\\DTOS\\ReportCreateRequest.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\DTOS\\ReportCreateRequest.cs",
-              "RelativeToolTip": "BOs\\DTOS\\ReportCreateRequest.cs",
+              "Title": "IHealthReportService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\IHealthReportService.cs",
+              "RelativeDocumentMoniker": "Repos\\IHealthReportService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\IHealthReportService.cs",
+              "RelativeToolTip": "Repos\\IHealthReportService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:19:54.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HistoryService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\Repos\\Implements\\HistoryService.cs",
-              "RelativeDocumentMoniker": "Repos\\Implements\\HistoryService.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\Repos\\Implements\\HistoryService.cs",
-              "RelativeToolTip": "Repos\\Implements\\HistoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:12:07.211Z",
+              "WhenOpened": "2024-10-22T15:18:37.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HistoryController.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\WebAPI\\Controllers\\HistoryController.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\HistoryController.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\WebAPI\\Controllers\\HistoryController.cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\HistoryController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "DocumentIndex": 5,
+              "Title": "PiggeryManagementContext.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\PiggeryManagementContext.cs",
+              "RelativeDocumentMoniker": "BOs\\PiggeryManagementContext.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\PiggeryManagementContext.cs",
+              "RelativeToolTip": "BOs\\PiggeryManagementContext.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAQwFMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T17:27:21.343Z",
+              "WhenOpened": "2024-10-22T14:59:37.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CageService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\Implements\\CageService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\CageService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\Implements\\CageService.cs",
+              "RelativeToolTip": "Repos\\Implements\\CageService.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:45:21.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "History.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\History.cs",
-              "RelativeDocumentMoniker": "BOs\\History.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\History.cs",
-              "RelativeToolTip": "BOs\\History.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAVAAAA",
+              "Title": "ICageService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\ICageService.cs",
+              "RelativeDocumentMoniker": "Repos\\ICageService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\ICageService.cs",
+              "RelativeToolTip": "Repos\\ICageService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:37:20.891Z"
+              "WhenOpened": "2024-10-22T14:44:58.321Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HistoryUpdateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\DTOS\\HistoryUpdateRequest.cs",
-              "RelativeDocumentMoniker": "BOs\\DTOS\\HistoryUpdateRequest.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\DTOS\\HistoryUpdateRequest.cs",
-              "RelativeToolTip": "BOs\\DTOS\\HistoryUpdateRequest.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAWAAAA",
+              "DocumentIndex": 11,
+              "Title": "CageController.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\WebAPI\\Controllers\\CageController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\CageController.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\WebAPI\\Controllers\\CageController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\CageController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAIwFAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T15:36:56.376Z"
+              "WhenOpened": "2024-10-22T14:43:25.006Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IHistoryService.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\Repos\\IHistoryService.cs",
-              "RelativeDocumentMoniker": "Repos\\IHistoryService.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\Repos\\IHistoryService.cs",
-              "RelativeToolTip": "Repos\\IHistoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABHAAAA",
+              "DocumentIndex": 0,
+              "Title": "HistoryService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\Implements\\HistoryService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\HistoryService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\Implements\\HistoryService.cs",
+              "RelativeToolTip": "Repos\\Implements\\HistoryService.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAhwDIAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T15:39:37.052Z"
+              "WhenOpened": "2024-10-22T14:43:25.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AnimalController.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\WebAPI\\Controllers\\AnimalController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AnimalController.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\WebAPI\\Controllers\\AnimalController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\AnimalController.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAkwFEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:40:05.142Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Work.cs",
-              "DocumentMoniker": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\Work.cs",
-              "RelativeDocumentMoniker": "BOs\\Work.cs",
-              "ToolTip": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\Work.cs",
-              "RelativeToolTip": "BOs\\Work.cs",
+              "Title": "HealthReportService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\Implements\\HealthReportService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\HealthReportService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\Implements\\HealthReportService.cs",
+              "RelativeToolTip": "Repos\\Implements\\HealthReportService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:39:19.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Report.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\Report.cs",
+              "RelativeDocumentMoniker": "BOs\\Report.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\Report.cs",
+              "RelativeToolTip": "BOs\\Report.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T15:42:27.168Z"
+              "WhenOpened": "2024-10-22T14:39:16.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "History.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\History.cs",
+              "RelativeDocumentMoniker": "BOs\\History.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\History.cs",
+              "RelativeToolTip": "BOs\\History.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA8wBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:39:10.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAnimalService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\IAnimalService.cs",
+              "RelativeDocumentMoniker": "Repos\\IAnimalService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\IAnimalService.cs",
+              "RelativeToolTip": "Repos\\IAnimalService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:35:58.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnimalService.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\Implements\\AnimalService.cs",
+              "RelativeDocumentMoniker": "Repos\\Implements\\AnimalService.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\Repos\\Implements\\AnimalService.cs",
+              "RelativeToolTip": "Repos\\Implements\\AnimalService.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAswGoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:35:15.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PiggeryManagementContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\Migrations\\PiggeryManagementContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "BOs\\Migrations\\PiggeryManagementContextModelSnapshot.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\Migrations\\PiggeryManagementContextModelSnapshot.cs",
+              "RelativeToolTip": "BOs\\Migrations\\PiggeryManagementContextModelSnapshot.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAlwIkAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:33:52.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserShift.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\UserShift.cs",
+              "RelativeDocumentMoniker": "BOs\\UserShift.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\UserShift.cs",
+              "RelativeToolTip": "BOs\\UserShift.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:24:50.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HealthReport.cs",
+              "DocumentMoniker": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\HealthReport.cs",
+              "RelativeDocumentMoniker": "BOs\\HealthReport.cs",
+              "ToolTip": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\HealthReport.cs",
+              "RelativeToolTip": "BOs\\HealthReport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T14:21:07.985Z",
+              "EditorCaption": ""
             }
           ]
         }

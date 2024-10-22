@@ -78,5 +78,16 @@ namespace WebAPI.Controllers
             var updateAnimal = _animalService.DeleteAnimal(id);
             return Ok();
         }
+
+        [HttpGet("find-cage-by-animal/{id}")]
+        public async Task<ActionResult<Animal>> GetCurrentCageOfAnimal(Guid id)
+        {
+            var cage = _animalService.getCurrentCage(id);
+            if (cage == null)
+            {
+                return NotFound();
+            }
+            return Ok(cage);
+        }
     }
 }

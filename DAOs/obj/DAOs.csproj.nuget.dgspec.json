@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\Downloads\\backend (2)\\DAOs\\DAOs.csproj": {}
+    "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\DAOs\\DAOs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\BOs.csproj": {
+    "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\BOs.csproj",
+        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\BOs.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\obj\\",
+        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\BOs.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -121,21 +116,17 @@
         }
       }
     },
-    "C:\\Users\\acer\\Downloads\\backend (2)\\DAOs\\DAOs.csproj": {
+    "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\DAOs\\DAOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Downloads\\backend (2)\\DAOs\\DAOs.csproj",
+        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\DAOs\\DAOs.csproj",
         "projectName": "DAOs",
-        "projectPath": "C:\\Users\\acer\\Downloads\\backend (2)\\DAOs\\DAOs.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Downloads\\backend (2)\\DAOs\\obj\\",
+        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\DAOs\\DAOs.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\DAOs\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -143,15 +134,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\BOs.csproj": {
-                "projectPath": "C:\\Users\\acer\\Downloads\\backend (2)\\BOs\\BOs.csproj"
+              "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\BOs.csproj": {
+                "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone11\\backend\\BOs\\BOs.csproj"
               }
             }
           }

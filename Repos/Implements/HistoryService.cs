@@ -34,6 +34,29 @@ namespace Repos.Implements
 
         public async Task<History> CreateHistoryAsync(HistoryCreateRequest request)
         {
+            var animalExists = _unitOfWork.AnimalRepository.Get(filter: a => a.AnimalID == request.AnimalID);
+            if (animalExists == null)
+            {
+                // Handle the case where the AnimalID doesn't exist
+                throw new Exception("The specified AnimalID does not exist.");
+            }
+            var cageExists = _unitOfWork.CageRepository.Get(filter: a => a.CageID == request.CageID);
+            if (cageExists == null)
+            {
+                // Handle the case where the AnimalID doesn't exist
+                throw new Exception("The specified CageID does not exist.");
+            }
+
+            var currentCageOfAnimal = _unitOfWork.HistoryRepository
+                .Get(filter: x => x.AnimalID == request.AnimalID &&
+                    (x.ToDate == null || x.ToDate >= DateTime.UtcNow))
+                .FirstOrDefault().Cage;
+
+            if(currentCageOfAnimal != null)
+            {
+                throw new Exception("Animal was in another Cage.");
+            }
+
             var newHistory = new History
             {
                 HistoryID = Guid.NewGuid(),
@@ -54,7 +77,7 @@ namespace Repos.Implements
             _unitOfWork.Save();
 
             return newHistory;
-        }
+        }   
 
         public async Task<History> UpdateHistoryAsync(Guid historyId, HistoryUpdateRequest request)
         {

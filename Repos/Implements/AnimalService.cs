@@ -97,6 +97,16 @@ namespace Repos.Implements
             _unitOfWork.Save();
             return true;
         }
+
+        public Cage getCurrentCage(Guid id)
+        {
+            var currentCage = _unitOfWork.HistoryRepository
+                .Get(filter: x => x.AnimalID == id &&
+                    (x.ToDate == null || x.ToDate >= DateTime.UtcNow),
+                    includeProperties: "Cage")
+                .FirstOrDefault().Cage;
+            return currentCage;
+        }
     }
 }
 

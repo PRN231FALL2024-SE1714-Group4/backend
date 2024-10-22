@@ -102,8 +102,38 @@ namespace BOs.Migrations
                     b.ToTable("Cages");
                 });
 
+            modelBuilder.Entity("BOs.HealthReport", b =>
+                {
+                    b.Property<Guid>("HelthReportID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CageID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WorkShift")
+                        .HasColumnType("int");
+
+                    b.HasKey("HelthReportID");
+
+                    b.HasIndex("CageID");
+
+                    b.ToTable("HealthReports");
+                });
+
             modelBuilder.Entity("BOs.History", b =>
                 {
+                    b.Property<Guid>("HistoryID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid>("AnimalID")
                         .HasColumnType("uniqueidentifier");
 
@@ -120,9 +150,6 @@ namespace BOs.Migrations
                     b.Property<DateTime?>("FromDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("HistoryID")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -133,7 +160,9 @@ namespace BOs.Migrations
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("AnimalID", "CageID");
+                    b.HasKey("HistoryID");
+
+                    b.HasIndex("AnimalID");
 
                     b.HasIndex("CageID");
 
@@ -153,10 +182,6 @@ namespace BOs.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HealthDescription")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -257,16 +282,10 @@ namespace BOs.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("UserId")
@@ -347,6 +366,17 @@ namespace BOs.Migrations
                         .IsRequired();
 
                     b.Navigation("Area");
+                });
+
+            modelBuilder.Entity("BOs.HealthReport", b =>
+                {
+                    b.HasOne("BOs.Cage", "Cage")
+                        .WithMany()
+                        .HasForeignKey("CageID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cage");
                 });
 
             modelBuilder.Entity("BOs.History", b =>

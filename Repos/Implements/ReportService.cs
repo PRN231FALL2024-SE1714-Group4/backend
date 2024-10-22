@@ -38,7 +38,7 @@ namespace Repos.Implements
             {
                 WorkId = request.WorkId,
                 Description = request.Description,
-                HealthDescription = request.HealthDescription,
+                //HealthDescription = request.HealthDescription,
                 DateTime = DateTime.UtcNow
             };
 
@@ -68,7 +68,7 @@ namespace Repos.Implements
             }
 
             report.Description = request.Description ?? report.Description;
-            report.HealthDescription = request.HealthDescription ?? report.HealthDescription;
+            //report.HealthDescription = request.HealthDescription ?? report.HealthDescription;
             //report.DateTime = DateTime.UtcNow ?? report;
 
             if(request.WorkStatus != null)

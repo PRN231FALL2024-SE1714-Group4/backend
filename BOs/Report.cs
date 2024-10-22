@@ -16,7 +16,6 @@ namespace BOs
         public Guid WorkId { get; set; }
         public string Description { get; set; }
         public DateTime DateTime { get; set; }
-        public string HealthDescription { get; set; }
 
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public ReportStatus Status { get; set; }

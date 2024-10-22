@@ -11,10 +11,7 @@ namespace BOs
     {
         [Key]
         public Guid HistoryID { get; set; } = Guid.NewGuid();
-
-        [Required]
         public Guid AnimalID { get; set; }
-        [Required]
         public Guid CageID { get; set; }
         public string Description { get; set; }
         public string Status { get; set; }

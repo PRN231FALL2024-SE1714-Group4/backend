@@ -11,7 +11,7 @@ namespace BOs.DTOS
     {
         public Guid WorkId { get; set; } // ID of the work associated with the report
         public string Description { get; set; } // Report description
-        public string HealthDescription { get; set; } // Health description of the work
+        //public string HealthDescription { get; set; } // Health description of the work
         //public DateTime DateTime { get; set; }
         public WorkStatus? WorkStatus { get; set; }
     }

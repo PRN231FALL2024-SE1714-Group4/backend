@@ -75,5 +75,11 @@ namespace WebAPI.Controllers
             return isDeleted ? Ok() : NotFound();
         }
 
+        [HttpGet("get-animal-in-cage/{id}")]
+        public async Task<ActionResult<List<Animal>>> GetAnimalsInCage(Guid id)
+        {
+            var cages = _cageService.GetAnimalsInCage(id);
+            return cages != null ? Ok(cages) : Ok("No animal found for the specified Area ID.");
+        }
     }
 }

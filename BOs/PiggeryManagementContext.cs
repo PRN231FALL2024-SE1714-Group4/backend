@@ -19,11 +19,12 @@ namespace BOs
         public DbSet<User> Users { get; set; }
         public DbSet<Work> Works { get; set; }  // Fully qualify here
         public DbSet<UserShift> UserShifts { get; set; }
+        public DbSet<HealthReport> HealthReports { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<History>()
-                .HasKey(h => new { h.AnimalID, h.CageID });
+            .HasKey(h => h.HistoryID);
 
             modelBuilder.Entity<Animal>()
                 .HasMany(a => a.Histories)
@@ -68,6 +69,20 @@ namespace BOs
 
             modelBuilder.Entity<UserShift>()
                 .HasOne(r => r.User);
+
+            modelBuilder.Entity<HealthReport>()
+                .HasOne(r => r.Cage);
+
+            modelBuilder.Entity<History>()
+                .HasOne(h => h.Animal)
+                .WithMany(a => a.Histories)
+                .HasForeignKey(h => h.AnimalID);
+
+            modelBuilder.Entity<History>()
+                .HasOne(h => h.Cage)
+                .WithMany(a => a.Histories)
+                .HasForeignKey(h => h.CageID);
+
 
             base.OnModelCreating(modelBuilder);
         }

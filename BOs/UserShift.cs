@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BOs
 {
-    public class UserShift : BaseEntity
+    public class UserShift
     {
         [Key]
         public Guid UserShiftId { get; set; } = Guid.NewGuid(); 

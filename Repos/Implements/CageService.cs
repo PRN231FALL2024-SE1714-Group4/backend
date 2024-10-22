@@ -69,5 +69,18 @@ namespace Repos.Implements
             _unitOfWork.Save();
             return isDeleted;
         }
+
+        public List<Animal> GetAnimalsInCage(Guid cageId)
+        {
+            var animalsInCage = _unitOfWork.HistoryRepository
+                .Get(filter: history => history.CageID == cageId &&
+                    (history.ToDate == null || history.ToDate >= DateTime.UtcNow),
+                    includeProperties: "Animal")
+                .Select(history => history.Animal)
+                .ToList();
+
+            return animalsInCage;
+        }
+
     }
 }
