@@ -46,7 +46,7 @@ namespace Repos.Implements
                 Status = healthReportCreate.Status,
                 DateTime = healthReportCreate.DateTime,
                 Description = healthReportCreate.Description,
-                WorkShift = healthReportCreate.WorkShift,
+                //WorkShift = healthReportCreate.WorkShift,
                 UserID = this.GetCurrentUserId(),
             };
 
@@ -64,7 +64,7 @@ namespace Repos.Implements
             existingHealthReport.Description = healthReportUpdate.Description ?? existingHealthReport.Description;
             existingHealthReport.DateTime = healthReportUpdate.DateTime ?? existingHealthReport.DateTime;
             existingHealthReport.Status = healthReportUpdate?.Status ?? existingHealthReport.Status;
-            existingHealthReport.WorkShift = healthReportUpdate?.WorkShift ?? existingHealthReport.WorkShift;
+            //existingHealthReport.WorkShift = healthReportUpdate?.WorkShift ?? existingHealthReport.WorkShift;
 
 
             bool isUpdated = _unitOfWork.HealthReportRepository.Update(id, existingHealthReport);

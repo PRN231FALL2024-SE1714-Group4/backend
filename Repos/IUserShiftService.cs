@@ -20,5 +20,6 @@ namespace Repos
         public bool deleteUserShift(Guid shiftId);
         List<UserShift> getAllUserShifts(DateOnly fromDate, DateOnly toDate);
         UserShift getUserShiftById(Guid id);
+        List<UserShift> getUserShift();
     }
 }

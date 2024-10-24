@@ -125,9 +125,6 @@ namespace BOs.Migrations
                     b.Property<Guid>("UserID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("WorkShift")
-                        .HasColumnType("int");
-
                     b.HasKey("HelthReportID");
 
                     b.HasIndex("CageID");

@@ -15,7 +15,6 @@ namespace BOs
         public Guid CageID { get; set; }
         public Guid UserID { get; set; }
         public string Description {  get; set; }
-        public WorkShiftEnum WorkShift { get; set; }
         public DateTime DateTime { get; set; }
         public HealthStatus Status { get; set; }
         

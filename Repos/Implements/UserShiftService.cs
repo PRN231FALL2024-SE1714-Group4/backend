@@ -60,13 +60,13 @@ namespace Repos.Implements
                 {
                     throw new Exception("Invalid Time");
                 }
-
-                if (this.checkDuplicated(userShift))
+                else if (this.checkDuplicated(userShift))
                 {
                     string tempString = $"Duplicate WorkShift found in request for User ID {shift.UserId} on {shift.StartDate}.";
                     errorShift += "\n" + tempString;
                 }
-                _unitOfWork.UserShiftRepository.Insert(userShift);
+                else 
+                    _unitOfWork.UserShiftRepository.Insert(userShift);
             }
             _unitOfWork.Save();
             if(!errorShift.Equals(""))
@@ -351,6 +351,14 @@ namespace Repos.Implements
                 .Get(filter: x => x.UserShiftId == id,
                     includeProperties: "User")
                 .FirstOrDefault();
+        }
+
+        public List<UserShift> getUserShift()
+        {
+
+            return _unitOfWork.UserShiftRepository
+                .Get(includeProperties: "User")
+                .ToList();
         }
     }
 }

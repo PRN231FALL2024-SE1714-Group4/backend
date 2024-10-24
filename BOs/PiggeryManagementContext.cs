@@ -90,7 +90,6 @@ namespace BOs
             modelBuilder.Entity<HealthReport>()
                 .HasOne(r => r.User);
 
-
             base.OnModelCreating(modelBuilder);
         }
 
