@@ -3,6 +3,7 @@ using BOs.DTOS;
 using BOs.Enum;
 using DAOs;
 using Microsoft.AspNetCore.Http;
+using Microsoft.IdentityModel.Tokens;
 using Repos.Response;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,26 @@ namespace Repos.Implements
 
         public bool createUserShift(List<UserShiftRequest> userShiftRequests)
         {
+            string errorShift = "";
+            List<UserShiftRequest> suitableRequest = new List<UserShiftRequest>(userShiftRequests);
             foreach (var shift in userShiftRequests)
+            {
+                var userId = shift.UserId ?? this.GetCurrentUserId();
+                var duplicatesInRequest = userShiftRequests
+                    .Where(s => s.UserId == shift.UserId && s.StartDate == shift.StartDate)
+                    .ToList();
+
+                if (duplicatesInRequest.Count > 1)
+                {
+                    suitableRequest.Remove(shift);
+                    string tempString = $"Duplicate WorkShift found in request for User ID {shift.UserId} on {shift.StartDate}.";
+                    if (errorShift.IndexOf(tempString) == -1)
+                        errorShift += "\n" + tempString;
+                }
+            }
+
+
+            foreach (var shift in suitableRequest)
             {
                 var userShift = new UserShift()
                 {
@@ -43,11 +63,16 @@ namespace Repos.Implements
 
                 if (this.checkDuplicated(userShift))
                 {
-                    throw new Exception("Duplicated Shift!");
+                    string tempString = $"Duplicate WorkShift found in request for User ID {shift.UserId} on {shift.StartDate}.";
+                    errorShift += "\n" + tempString;
                 }
                 _unitOfWork.UserShiftRepository.Insert(userShift);
             }
             _unitOfWork.Save();
+            if(!errorShift.Equals(""))
+            {
+                throw new Exception(errorShift);
+            }
             return true;
         }
 
@@ -266,7 +291,6 @@ namespace Repos.Implements
         {
             var count = _unitOfWork.UserShiftRepository
                 .Get(filter: x => x.UserId == shift.UserId &&
-                      x.WorkShift == shift.WorkShift &&
                       (
                         (x.StartDate >= shift.StartDate && x.StartDate <= shift.EndDate)
                         || (x.EndDate >= shift.StartDate && x.EndDate <= shift.EndDate)
