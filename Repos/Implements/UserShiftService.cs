@@ -360,5 +360,14 @@ namespace Repos.Implements
                 .Get(includeProperties: "User")
                 .ToList();
         }
+
+        public List<UserShift> getAllMyUserShift()
+        {
+            Guid userId = this.GetCurrentUserId();
+            return _unitOfWork.UserShiftRepository
+                .Get(   filter: x => x.UserId == userId,
+                        includeProperties: "User")
+                .ToList();
+        }
     }
 }

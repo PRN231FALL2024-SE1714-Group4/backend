@@ -21,5 +21,6 @@ namespace Repos
         List<UserShift> getAllUserShifts(DateOnly fromDate, DateOnly toDate);
         UserShift getUserShiftById(Guid id);
         List<UserShift> getUserShift();
+        List<UserShift> getAllMyUserShift();
     }
 }

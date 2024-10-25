@@ -255,5 +255,28 @@ namespace WebAPI.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpGet("get-all/me")]
+        [JwtAuthorize("MANAGER", "STAFF")]
+        public ActionResult<List<UserShift>> GetAllMine()
+        {
+            try
+            {
+                // Call the service to get the workers in shift
+                var workersInShift = _userShiftService.getAllMyUserShift();
+
+                // Check if the result is empty
+                if (workersInShift == null || !workersInShift.Any())
+                {
+                    return Ok("No shifts found for the specified date range.");
+                }
+
+                return Ok(workersInShift);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
