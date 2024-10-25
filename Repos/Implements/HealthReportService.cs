@@ -1,8 +1,10 @@
 ﻿using BOs;
 using BOs.DTOS;
+using BOs.Enum;
 using DAOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Repos.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -83,6 +85,45 @@ namespace Repos.Implements
                 _unitOfWork.Save();
             }
             return isDeleted;
+        }
+
+        public List<CageNeedToReport> GetCageNeedToReport()
+        {
+            Guid currentUserId = this.GetCurrentUserId();
+            List<Work> works = _unitOfWork.WorkRepository
+                .Get(filter: x => x.AssigneeID == currentUserId)
+                .ToList();
+
+            var groupedWorks = works.GroupBy(
+                    x => new { x.CageID, x.StartDate.Date },  // Group by CageID and StartDate (ignoring time part)
+                    (key, g) => new { CageID = key.CageID, StartDate = key.Date, Works = g.ToList() })
+                .ToList();
+
+            List<CageNeedToReport> cagesToReport = new List<CageNeedToReport>();
+
+            foreach (var group in groupedWorks)
+            {
+                var healthReport = _unitOfWork.HealthReportRepository
+                    .Get(filter: x => x.CageID == group.CageID && x.DateTime == group.StartDate.Date)
+                    .ToList();
+                // Check if all works in the group have status DONE
+                if (group.Works.All(work => work.Status == WorkStatus.DONE) && healthReport.Count == 0)
+                {
+                    // Add the Cage to the report list if all works are DONE
+                    var cage = _unitOfWork.CageRepository.GetByID(group.CageID);
+                    if (cage != null)
+                    {
+                        cagesToReport.Add(new CageNeedToReport()
+                        {
+                            Cage = cage,
+                            DateTime = group.StartDate.Date,
+                        });
+                    }
+                }
+            }
+            return cagesToReport;
+
+            throw new NotImplementedException();
         }
 
         public Guid GetCurrentUserId()

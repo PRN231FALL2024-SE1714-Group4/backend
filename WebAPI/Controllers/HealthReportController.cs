@@ -117,5 +117,20 @@ namespace WebAPI.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpGet("cage-need-to-report")]
+        [JwtAuthorize("STAFF")]
+        public ActionResult GetCageNeedToReport()
+        {
+            try
+            {
+                var cage = _healthReportService.GetCageNeedToReport();
+                return Ok(cage);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

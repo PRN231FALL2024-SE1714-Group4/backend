@@ -1,5 +1,6 @@
 ﻿using BOs;
 using BOs.DTOS;
+using Repos.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ namespace Repos
         void AddHealthReport(HealthReportCreateRequest HealthReportCreate);
         bool UpdateHealthReport(Guid id, HealthReportUpdateRequest healthReportUpdate);
         bool DeleteHealthReport(Guid id);
+        List<CageNeedToReport> GetCageNeedToReport();
     }
 }
