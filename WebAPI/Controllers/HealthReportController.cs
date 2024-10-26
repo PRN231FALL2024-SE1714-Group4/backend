@@ -132,5 +132,19 @@ namespace WebAPI.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpGet("animal/{id}")]
+        public ActionResult GetHealthReportByAnimal(Guid id)
+        {
+            try
+            {
+                var cage = _healthReportService.GetHealthEeportByAnimal(id);
+                return Ok(cage);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

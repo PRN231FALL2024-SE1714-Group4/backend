@@ -17,5 +17,6 @@ namespace Repos
         bool UpdateHealthReport(Guid id, HealthReportUpdateRequest healthReportUpdate);
         bool DeleteHealthReport(Guid id);
         List<CageNeedToReport> GetCageNeedToReport();
+        List<HealthReport> GetHealthEeportByAnimal(Guid animalID);
     }
 }

@@ -140,5 +140,29 @@ namespace Repos.Implements
 
             throw new Exception("User ID not found.");
         }
+
+        public List<BOs.HealthReport> GetHealthEeportByAnimal(Guid animalID)
+        {
+            var historyByAnimal = _unitOfWork.HistoryRepository
+                .Get(filter: x => x.AnimalID == animalID,
+                includeProperties: "Animal,Cage");
+
+            List<BOs.HealthReport> healthReportByAnimal = new List<BOs.HealthReport>();
+            foreach(var history in historyByAnimal)
+            {
+                var fromDate = history.FromDate?.Date;
+                var toDate = history.ToDate?.Date;
+
+                var healthReport = _unitOfWork.HealthReportRepository
+                    .Get(filter: x => x.DateTime.Date >= fromDate
+                                      && (toDate == null || x.DateTime.Date <= toDate)
+                                      && x.CageID == history.CageID,
+                         includeProperties: "Cage")
+                    .ToList();
+                healthReportByAnimal.AddRange(healthReport);
+            }
+            return healthReportByAnimal;
+            throw new NotImplementedException();
+        }
     }
 }
