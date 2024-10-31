@@ -18,5 +18,6 @@ namespace Repos
         bool DeleteHealthReport(Guid id);
         List<CageNeedToReport> GetCageNeedToReport();
         List<HealthReport> GetHealthEeportByAnimal(Guid animalID);
+        List<HealthReport> GetMyHealthReport();
     }
 }

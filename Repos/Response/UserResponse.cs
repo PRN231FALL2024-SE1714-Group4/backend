@@ -8,10 +8,10 @@ namespace Repos.Response
 {
     public class UserResponse
     {
-        public String Token;
-        public String FullName;
-        public String Email;
-        public String Role;
+        public String Token {  get; set; }
+        public String FullName { get; set; }
+        public String Email { get; set; }
+        public String Role { get; set; }
 
         public UserResponse(string token, string fullName, string email, string role)
         {

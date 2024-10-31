@@ -15,6 +15,7 @@ namespace Repos
         UserResponse Login(UserLoginRequest request);
         List<User> GetUsers();
         User GetCurrentUser();
-   
+
+        Task<UserResponse> VerifyGoogleSignIn();
     }
 }

@@ -10,6 +10,7 @@ using System.Text;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,14 +48,15 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins",
-        builder =>
+        policy =>
         {
-            builder.WithOrigins("http://localhost:4176", "http://localhost:3000") // Add your allowed front-end URLs
-                   .AllowAnyHeader()    // Allow any headers (like Content-Type, Authorization, etc.)
-                   .AllowAnyMethod()    // Allow any HTTP methods (GET, POST, PUT, DELETE, etc.)
-                   .AllowCredentials(); // Allow credentials (if you're using cookies or authentication)
+            policy.WithOrigins("http://localhost:4176", "http://localhost:3000") // Add your allowed front-end URLs here
+                  .AllowAnyHeader()    // Allow any headers
+                  .AllowAnyMethod()    // Allow all HTTP methods
+                  .AllowCredentials(); // Allow credentials
         });
 });
+
 
 // Load JWT settings from appsettings.json
 var jwtSettings = builder.Configuration.GetSection("Jwt");
@@ -80,6 +82,14 @@ builder.Services.AddAuthentication(options =>
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true
     };
+})
+.AddCookie()
+.AddGoogle("Google", googleOptions =>
+{
+    googleOptions.ClientId = builder.Configuration["GoogleKeys:ClientId"];
+    googleOptions.ClientSecret = builder.Configuration["GoogleKeys:ClientSecret"];
+    googleOptions.SaveTokens = true;
+    googleOptions.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 });
 
 builder.Services.AddAuthorization();
@@ -114,20 +124,21 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
-app.UseCors("AllowSpecificOrigins");
 
-// Configure the HTTP request pipeline.
+app.UseHttpsRedirection();
+app.UseCors("AllowSpecificOrigins");
+app.UseAuthentication();
+app.UseAuthorization();
+
+// Swagger and Swagger UI in Development
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthentication();
-app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
+

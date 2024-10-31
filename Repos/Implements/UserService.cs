@@ -1,6 +1,8 @@
 ﻿using BOs;
 using BOs.DTOS;
 using DAOs;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -156,6 +158,37 @@ namespace Repos.Implements
             return _unitOfWork.UserRepository.Get(includeProperties: "Role").ToList();
         }
 
+        public async Task<UserResponse> VerifyGoogleSignIn()
+        {
+            var result = await _httpContextAccessor.HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            if (result?.Principal != null)
+            {
+                var emailClaim = result.Principal.FindFirst(ClaimTypes.Email);
+                if (emailClaim != null)
+                {
+                    var email = emailClaim.Value;
+
+                    // Check if email exists in the system
+                    var user = _unitOfWork.UserRepository.Get(filter: u => u.Email == email).FirstOrDefault();
+                    if (user != null)
+                    {
+                        // Email found, generate JWT token
+                        var token = GenerateJwtToken(user);
+                        var role = _unitOfWork.RoleRepository.GetByID(user.RoleID);
+
+                        return new UserResponse(token, user.FullName, user.Email, role.Name);
+                    }
+                    else
+                    {
+                            throw new Exception("Email not registered in the system.");
+                    }
+                }
+                throw new Exception("Email claim not found.");
+            }
+            throw new Exception("Error authenticating with Google");
+        }
+
         public User GetCurrentUser()
         {
             if (_httpContextAccessor.HttpContext != null && _httpContextAccessor.HttpContext.User != null)
@@ -170,5 +203,7 @@ namespace Repos.Implements
 
             throw new Exception("User ID not found.");
         }
+
+
     }
 }

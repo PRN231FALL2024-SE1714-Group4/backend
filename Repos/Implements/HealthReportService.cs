@@ -126,20 +126,7 @@ namespace Repos.Implements
             throw new NotImplementedException();
         }
 
-        public Guid GetCurrentUserId()
-        {
-            if (_httpContextAccessor.HttpContext != null && _httpContextAccessor.HttpContext.User != null)
-            {
-                var userIdClaim = _httpContextAccessor.HttpContext.User.FindFirst("nameid");
 
-                if (userIdClaim != null)
-                {
-                    return Guid.Parse(userIdClaim.Value);
-                }
-            }
-
-            throw new Exception("User ID not found.");
-        }
 
         public List<BOs.HealthReport> GetHealthEeportByAnimal(Guid animalID)
         {
@@ -163,6 +150,33 @@ namespace Repos.Implements
             }
             return healthReportByAnimal;
             throw new NotImplementedException();
+        }
+
+        public List<BOs.HealthReport> GetMyHealthReport()
+        {
+            Guid currentUserId = this.GetCurrentUserId();
+            var myHealthReport = _unitOfWork.HealthReportRepository
+                .Get(filter: x => x.UserID == currentUserId,
+                    includeProperties: "Cage")
+                .ToList();
+
+            return myHealthReport;
+            throw new NotImplementedException();
+        }
+
+        public Guid GetCurrentUserId()
+        {
+            if (_httpContextAccessor.HttpContext != null && _httpContextAccessor.HttpContext.User != null)
+            {
+                var userIdClaim = _httpContextAccessor.HttpContext.User.FindFirst("nameid");
+
+                if (userIdClaim != null)
+                {
+                    return Guid.Parse(userIdClaim.Value);
+                }
+            }
+
+            throw new Exception("User ID not found.");
         }
     }
 }

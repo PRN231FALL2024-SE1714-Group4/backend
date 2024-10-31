@@ -146,5 +146,20 @@ namespace WebAPI.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+        [HttpGet("me")]
+        [JwtAuthorize("STAFF")]
+        public ActionResult GetMyHealthReport(Guid id)
+        {
+            try
+            {
+                var cage = _healthReportService.GetMyHealthReport();
+                return Ok(cage);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
