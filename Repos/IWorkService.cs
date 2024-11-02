@@ -18,5 +18,8 @@ namespace Repos
         WorkResponse GetWorkByID(Guid id);
         List<WorkResponse> GetWorks();
         bool DeleteWork(Guid id);
+
+        List<WorkResponse> GetActiveWorksForToday();
+        List<WorkResponse> GetMyWorkToday();
     }
 }
