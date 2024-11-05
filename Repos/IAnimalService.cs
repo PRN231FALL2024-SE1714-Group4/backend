@@ -16,5 +16,7 @@ namespace Repos
         Task<Animal> UpdateAnimal(Guid id, AnimalUpdateRequest request);
         Task<bool> DeleteAnimal(Guid id);
         public Cage getCurrentCage(Guid id);
+
+        IQueryable<Animal> GetAnimalsOdata();
     }
 }

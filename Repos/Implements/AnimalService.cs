@@ -23,6 +23,11 @@ namespace Repos.Implements
         {
             return _unitOfWork.AnimalRepository.Get().ToList();
         }
+        
+        public IQueryable<Animal> GetAnimalsOdata()
+        {
+            return _unitOfWork.AnimalRepository.Get().AsQueryable();
+        }
 
         public async Task<Animal> GetAnimalById(Guid id)
         {

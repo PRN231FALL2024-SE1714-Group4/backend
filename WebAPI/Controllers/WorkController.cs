@@ -2,6 +2,7 @@
 using BOs.DTOS;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Repos;
 using Repos.Implements;
 using Repos.Response;
@@ -180,6 +181,13 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(new { message = ex.Message });
             }
+        }
+        
+        [HttpGet("odata")]
+        [EnableQuery]
+        public IQueryable<WorkResponse> GetAllWorks()
+        {
+            return _workservice.GetWorksOdata().AsQueryable();
         }
     }
 }

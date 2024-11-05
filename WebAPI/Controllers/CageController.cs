@@ -2,6 +2,7 @@
 using BOs.DTOS;
 using DAOs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Repos;
 using WebAPI.Request;
 
@@ -80,6 +81,13 @@ namespace WebAPI.Controllers
         {
             var cages = _cageService.GetAnimalsInCage(id);
             return cages != null ? Ok(cages) : Ok("No animal found for the specified Area ID.");
+        }
+        
+        [HttpGet("odata")]
+        [EnableQuery]
+        public IQueryable<Cage> GetCagesOData()
+        {
+            return _cageService.GetCagesOdata().AsQueryable();
         }
     }
 }

@@ -21,5 +21,7 @@ namespace Repos
 
         List<WorkResponse> GetActiveWorksForToday();
         List<WorkResponse> GetMyWorkToday();
+
+        IQueryable<WorkResponse> GetWorksOdata();
     }
 }
