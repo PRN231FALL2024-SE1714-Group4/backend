@@ -151,6 +151,35 @@ namespace WebAPI.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
-
+        
+        [HttpGet("active-today")]
+        [JwtAuthorize("ADMIN", "MANAGER", "STAFF")]
+        public ActionResult<List<WorkResponse>> GetActiveWorksForToday()
+        {
+            try
+            {
+                var activeWorks = _workservice.GetActiveWorksForToday();
+                return Ok(activeWorks);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+        
+        [HttpGet("my-work-today")]
+        [JwtAuthorize("ADMIN", "MANAGER", "STAFF")]
+        public ActionResult<List<WorkResponse>> GetMyWorkToday()
+        {
+            try
+            {
+                var tasks = _workservice.GetMyWorkToday();
+                return Ok(tasks);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
     }
 }

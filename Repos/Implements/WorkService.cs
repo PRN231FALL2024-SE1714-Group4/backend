@@ -178,6 +178,30 @@ namespace Repos.Implements
 
             return true;
         }
+        
+        public List<WorkResponse> GetActiveWorksForToday()
+        {
+            DateTime today = DateTime.Today;
 
+            var works = _unitOfWork.WorkRepository.Get(
+                filter: w => w.StartDate.Date <= today && w.EndDate.Date >= today,
+                includeProperties: "Cage,Assigner,Assignee").ToList();
+
+            return works.Select(w => MapWorkToWorkResponse(w)).ToList();
+        }
+        
+        public List<WorkResponse> GetMyWorkToday()
+        {
+            var currentUserId = GetCurrentUserId();
+            var today = DateTime.Today;
+
+            var works = _unitOfWork.WorkRepository.Get(
+                filter: w => w.AssigneeID == currentUserId && 
+                             (w.StartDate.Date <= today && w.EndDate.Date >= today),
+                includeProperties: "Assigner,Assignee,Cage").ToList();
+
+            return works.Select(w => MapWorkToWorkResponse(w)).ToList();
+        }
+        
     }
 }
