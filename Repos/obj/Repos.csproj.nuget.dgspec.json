@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\Repos\\Repos.csproj": {}
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/Repos/Repos.csproj": {}
   },
   "projects": {
-    "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\BOs\\BOs.csproj": {
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/BOs/BOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\BOs\\BOs.csproj",
+        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/BOs/BOs.csproj",
         "projectName": "BOs",
-        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\BOs\\BOs.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\BOs\\obj\\",
+        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/BOs/BOs.csproj",
+        "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
+        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/BOs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -60,6 +54,10 @@
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.1.22, )"
+            },
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[8.2.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -100,15 +98,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.20, 7.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.20, 7.0.20]"
             }
           ],
           "frameworkReferences": {
@@ -116,36 +110,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\DAOs\\DAOs.csproj": {
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/DAOs/DAOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\DAOs\\DAOs.csproj",
+        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/DAOs/DAOs.csproj",
         "projectName": "DAOs",
-        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\DAOs\\DAOs.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\DAOs\\obj\\",
+        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/DAOs/DAOs.csproj",
+        "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
+        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/DAOs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\BOs\\BOs.csproj": {
-                "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\BOs\\BOs.csproj"
+              "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/BOs/BOs.csproj": {
+                "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/BOs/BOs.csproj"
               }
             }
           }
@@ -154,11 +147,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -178,15 +166,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.20, 7.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.20, 7.0.20]"
             }
           ],
           "frameworkReferences": {
@@ -194,36 +178,35 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\Repos\\Repos.csproj": {
+    "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/Repos/Repos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\Repos\\Repos.csproj",
+        "projectUniqueName": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/Repos/Repos.csproj",
         "projectName": "Repos",
-        "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\Repos\\Repos.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\Repos\\obj\\",
+        "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/Repos/Repos.csproj",
+        "packagesPath": "/Users/tranthihongphuc/.nuget/packages/",
+        "outputPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/Repos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tranthihongphuc/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\DAOs\\DAOs.csproj": {
-                "projectPath": "E:\\FPT\\8th Sem\\PRN231\\clone13\\backend\\DAOs\\DAOs.csproj"
+              "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/DAOs/DAOs.csproj": {
+                "projectPath": "/Users/tranthihongphuc/Documents/Document_MacOs/PRN231_Project/be-final/backend/DAOs/DAOs.csproj"
               }
             }
           }
@@ -232,11 +215,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -256,15 +234,11 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.20, 7.0.20]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.18, 7.0.18]"
+              "version": "[7.0.20, 7.0.20]"
             }
           ],
           "frameworkReferences": {
@@ -272,7 +246,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }

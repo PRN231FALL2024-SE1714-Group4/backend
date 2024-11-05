@@ -1,6 +1,7 @@
 ﻿using BOs.DTOS;
 using BOs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Repos;
 using Repos.Implements;
 
@@ -88,6 +89,13 @@ namespace WebAPI.Controllers
                 return NotFound();
             }
             return Ok(cage);
+        }
+        
+        [HttpGet("odata")]
+        [EnableQuery]
+        public IQueryable<Animal> GetCagesOData()
+        {
+            return _animalService.GetAnimalsOdata().AsQueryable();
         }
     }
 }

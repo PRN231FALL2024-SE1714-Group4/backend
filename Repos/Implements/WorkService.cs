@@ -203,5 +203,11 @@ namespace Repos.Implements
             return works.Select(w => MapWorkToWorkResponse(w)).ToList();
         }
         
+        public IQueryable<WorkResponse> GetWorksOdata()
+        {
+            var works = _unitOfWork.WorkRepository.Get(includeProperties: "Cage,Assigner,Assignee");
+            return works.Select(w => MapWorkToWorkResponse(w)).AsQueryable();
+        }
+        
     }
 }

@@ -18,5 +18,6 @@ namespace Repos
         Task<bool> UpdateCage(Guid id, CageUpdateRequest request);
         Task<bool> DeleteCage(Guid id);
         List<Animal> GetAnimalsInCage(Guid id);
+        IQueryable<Cage> GetCagesOdata();
     }
 }

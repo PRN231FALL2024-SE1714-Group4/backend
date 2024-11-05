@@ -81,6 +81,11 @@ namespace Repos.Implements
 
             return animalsInCage;
         }
+        
+        public IQueryable<Cage> GetCagesOdata()
+        {
+            return _unitOfWork.CageRepository.Get(includeProperties: "Area").AsQueryable();
+        }
 
     }
 }

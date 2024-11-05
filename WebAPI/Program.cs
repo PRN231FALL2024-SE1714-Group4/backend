@@ -11,6 +11,10 @@ using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.OData;
+using Microsoft.OData.Edm;
+using Microsoft.OData.ModelBuilder;
+using Repos.Response;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +40,12 @@ builder.Services.AddScoped<IUserShiftService, UserShiftService>();
 builder.Services.AddScoped<IHistoryService, HistoryService>();
 builder.Services.AddScoped<IHealthReportService, HealthReportService>();
 
+builder.Services.AddControllers().AddOData(opt => 
+{
+    opt.EnableQueryFeatures();
+    opt.Filter().OrderBy().Expand().Select().Count().SetMaxTop(100);
+    opt.AddRouteComponents("odata", GetEdmModel()); 
+});
 
 //Add DbContext configuration
 builder.Services.AddDbContext<PiggeryManagementContext>(options =>
@@ -92,6 +102,15 @@ builder.Services.AddAuthentication(options =>
     googleOptions.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 });
 
+static IEdmModel GetEdmModel()
+{
+    var odataBuilder = new ODataConventionModelBuilder();
+    odataBuilder.EntitySet<Cage>("Cage");
+    odataBuilder.EntitySet<Animal>("Animal"); 
+    odataBuilder.EntitySet<Work>("Work");
+    odataBuilder.EntitySet<WorkResponse>("Works");
+    return odataBuilder.GetEdmModel();
+}
 builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -139,6 +158,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapControllers();
+app.UseRouting();
 
 app.Run();
 
